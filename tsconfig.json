@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+
+    // not-sure-starts
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "exactOptionalPropertyTypes": false,
+    "noImplicitOverride": true,
+    // not-sure-ends
+
+    "lib": ["ES2023"],
+    "target": "ES2022",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "paths": {
+      "*": [
+        "types/*"
+      ]
+    },
+    "typeRoots": [
+      "./types",
+      "./node_modules/@types"
+    ],
+    "outDir": "./dist",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "useUnknownInCatchVariables": false,
+    "skipLibCheck": true
+  }
+}

@@ -1,0 +1,726 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+	<title>replay-master - Moleculer Microservices Project</title>
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+	<link href="https://unpkg.com/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="shortcut icon" type="image/png" href="https://moleculer.services/icon/favicon-16x16.png"/>
+	<script src="https://unpkg.com/vue@3.2.34/dist/vue.global.js"></script>
+	<link rel="stylesheet" href="./main.css" />
+</head>
+<body>
+	<div id="app">
+		<header>
+			<a href="https://moleculer.services/docs/0.14/" target="_blank">
+				<img class="logo" src="https://moleculer.services/images/logo/logo_with_text_horizontal_100h_shadow.png" /></a>
+			<nav>
+				<ul>
+					<li v-for="item in menu" :class="{ active: page == item.id}" @click="changePage(item.id)">{{ item.caption }}</li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<section id="home" v-if="page == 'home'">
+				<div class="content">
+					<h1>Welcome to your Moleculer microservices project!</h1>
+					<p>Check out the <a href="https://moleculer.services/docs/0.14/" target="_blank">Moleculer documentation</a> to learn how to customize this project.</p>
+
+					<template v-if="broker">
+						<h3>Configuration</h3>
+						<div class="boxes">
+							<div class="box">
+								<div class="caption">Namespace</div>
+								<div class="value">{{ broker.namespace || "&lt;not set&gt;" }}</div>
+							</div>
+
+							<div class="box">
+								<div class="caption">Transporter</div>
+								<div class="value">{{ broker.transporter || "&lt;no transporter&gt;" }}</div>
+							</div>
+
+							<div class="box">
+								<div class="caption">Serializer</div>
+								<div class="value">{{ broker.serializer || "JSON" }}</div>
+							</div>
+
+							<div class="box">
+								<div class="caption">Strategy</div>
+								<div class="value">{{ broker.registry.strategy || "Round Robin" }}</div>
+							</div>
+
+							<div class="box">
+								<div class="caption">Cacher</div>
+								<div class="value">{{ broker.cacher ? "Enabled" : "Disabled" }}</div>
+							</div>
+
+							<div class="box">
+								<div class="caption">Logger</div>
+								<div class="value">{{ broker.logger ? "Enabled" : "Disabled" }}</div>
+							</div>
+
+							<div class="box">
+								<div class="caption">Metrics</div>
+								<div class="value">{{ broker.metrics.enabled ? "Enabled" : "Disabled" }}</div>
+							</div>
+
+							<div class="box">
+								<div class="caption">Tracing</div>
+								<div class="value">{{ broker.tracing.enabled ? "Enabled" : "Disabled" }}</div>
+							</div>
+						</div>
+
+						<h3 class="cursor-pointer" @click="showBrokerOptions = !showBrokerOptions">Broker options <i :class="'fa fa-angle-' + (showBrokerOptions ? 'up' : 'down')"></i></h3>
+						<pre v-if="showBrokerOptions" class="broker-options"><code>{{ broker }}</code></pre>
+					</template>
+				</div>
+			</section>
+			<section id="apis" v-if="page == 'apis'">
+				<div class="flex row no-wrap m-y-sm ">
+					<input type="text" class="input-size-md flex-grow" placeholder="Search in actions, methods, paths..." v-model="apiSearchText" />
+					<button class="m-x-xs button outlined positive" @click="refreshApiPage">
+						<i class="fa fa-refresh"></i>
+						Refresh
+					</button>
+					<button :class="`button  ${globalAuth?.token ? 'positive' : 'outlined negative'}`" @click="showAuthorizeDialog">
+						<i :class="`fa fa-${globalAuth?.token ? 'lock' : 'unlock'}`"></i>
+						Authorize
+					</button>
+				</div>
+				<hr/>
+			<template v-for="(section, name) in filteredApis" :key="name">
+				<section v-if="section && section.length>0" :id="name">
+					<fieldset>
+						<legend>
+							{{ getService(name).fullName }}<span v-if="getService(name).version" class="badge light  m-x-xs">{{ getService(name).version }}</span>
+						</legend>
+						<div class="content">
+							<div :class="`action-card action-method-${item.rest.method.toLocaleLowerCase()} `" v-for="item,ix in section" :key="ix" >
+								<div class="action-card-header" @click="item.expand=!item.expand">
+									<span :class="`badge lg fixed text-center text-code bg-method-${item.rest.method.toLocaleLowerCase()} `"> {{ item.rest.method }}</span>
+									<span class="text-subtitle2 m-x-xs">{{ item.rest.path }}</span>
+									<div class="flex-spacer"></div>
+									<span class="text-caption m-x-xs">{{ item.action }}</span>
+									<span class="badge m-x-xs">{{ item.fields.length }}</span>
+								</div>
+								<form @submit.prevent.stop="callAction(item,name)">
+									<div :class="{'action-card-section':true,expand:item.expand}">
+										<div class="action-card-section-parameters">
+											<div class="action-card-section-parameters-header">
+
+												<div class="text-p">Parameters</div>
+												<div class="flex-spacer"></div>
+												<div class="">
+													<button :disabled="item.loading" class="button" type="submit">
+														<i :class="`fa fa-${item.loading ? 'spinner':'rocket'}`"></i>
+														{{item.loading ? 'Trying...' : 'Try'}}
+													</button>
+												</div>
+										</div>
+										<div class="action-card-section-parameters-body">
+											<div v-if="item.fields" class="parameters">
+												<div :class="{field:true,required:field.optional===false}" v-for="field,ix in item.fields" :key="field.name">
+													<label :for="field.name+'--'+ix">{{ field.label }}: </label>
+													<input v-if="field.dataType==='number'"  :min="field.min" :max="field.max"  :type="field.type" :id="field.name+'--'+ix" :name="field.name" v-model.number="field.value" :required="field.required === true || field.optional===false" />
+													<input v-else :type="field.type"  :maxlength="field.maxLength" :minlength="field.minLength"  :id="field.name+'--'+ix" :name="field.name" v-model="field.value" :required="field.required === true || field.optional===false" />
+												</div>
+											</div>
+										</div>
+										</div>
+										<div class="action-card-section-response" v-if="item.status">
+											<div class="action-card-section-response-header">
+												<div class="text-p">Response</div>
+												<span text>
+													<div class="badge m-x-xs" :class="{ green: item.status < 400, red: item.status >= 400 || item.status == 'ERR' }">{{ item.status }}</div>
+													<div class="badge time m-r-xs">{{ humanize(item.duration) }}</div>
+												</span>
+												<div class="flex-spacer"></div>
+												<div>
+													<button v-if="item.response" class="button outlined negative" @click="clearResponse(item)">
+														<i :class="`fa fa-remove`"></i>
+														Clear
+													</button>
+												</div>
+											</div>
+											<div class="action-card-section-response-body">
+												<pre><code>{{ item.response }}</code></pre>
+											</div>
+
+										</div>
+									</div>
+							    </form>
+							</div>
+						</div>
+					</fieldset>
+				</section>
+			</template>
+			</section>
+			<section id="nodes" v-if="page == 'nodes'">
+				<table>
+					<thead>
+						<th>Node ID</th>
+						<th>Type</th>
+						<th>Version</th>
+						<th>IP</th>
+						<th>Hostname</th>
+						<th>Status</th>
+						<th>CPU</th>
+					</thead>
+					<tbody>
+						<tr v-for="node in nodes" :class="{ offline: !node.available, local: node.local }" :key="node.id">
+							<td>{{ node.id }}</td>
+							<td>{{ node.client.type }}</td>
+							<td>{{ node.client.version }}</td>
+							<td>{{ node.ipList[0] }}</td>
+							<td>{{ node.hostname }}</td>
+
+							<td><div class="badge" :class="{ green: node.available, red: !node.available }">{{ node.available ? "Online": "Offline" }}</div></td>
+							<td>
+								<div class="bar" :style="{ width: node.cpu != null ? node.cpu + '%' : '0' }"></div>
+								{{ node.cpu != null ? Number(node.cpu).toFixed(0) + '%' : '-' }}
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+			<section id="services" v-if="page == 'services'">
+				<table>
+					<thead>
+						<th>Service/Action name</th>
+						<th>REST</th>
+						<th>Parameters</th>
+						<th>Instances</th>
+						<th>Status</th>
+					</thead>
+					<tbody>
+						<template v-for="svc in filteredServices">
+							<tr class="service">
+								<td>
+									{{ svc.name }}
+									<div v-if="svc.version" class="badge">{{ svc.version }}</div>
+								</td>
+								<td>{{ svc.settings.rest ? svc.settings.rest : svc.fullName }}</td>
+								<td></td>
+								<td class="badges">
+									<div class="badge" v-for="nodeID in svc.nodes">
+										{{ nodeID }}
+									</div>
+								</td>
+								<td>
+									<div v-if="svc.nodes.length > 0" class="badge green">Online</div>
+									<div v-else class="badge red">Offline</div>
+								</td>
+							</tr>
+							<tr v-for="action in getServiceActions(svc)" :class="{ action: true, offline: !action.available, local: action.hasLocal }">
+								<td>
+									{{ action.name }}
+									<div v-if="action.action.cache" class="badge orange">cached</div>
+								</td>
+								<td v-html="getActionREST(svc, action)"></td>
+								<td :title="getActionParams(action)">
+									{{ getActionParams(action, 40) }}
+								</td>
+								<td></td>
+								<td>
+									<div v-if="action.available" class="badge green">Online</div>
+									<div v-else class="badge red">Offline</div>
+								</td>
+							</tr>
+						</template>
+					</tbody>
+				</table>
+			</section>
+		</main>
+
+		<footer>
+			<div class="footer-copyright">
+				Copyright &copy; 2016-2022 - Moleculer
+			</div>
+			<div class="footer-links">
+				<a href="https://github.com/moleculerjs/moleculer" class="footer-link" target="_blank">Github</a>
+				<a href="https://twitter.com/MoleculerJS" class="footer-link" target="_blank">Twitter</a>
+				<a href="https://discord.gg/TSEcDRP" class="footer-link" target="_blank">Discord</a>
+				<a href="https://stackoverflow.com/questions/tagged/moleculer" class="footer-link" target="_blank">Stack Overflow</a>
+			</div>
+		</footer>
+		<div v-if="openAuthorizeDialog" >
+			<div class="modal-overlay"></div>
+			<div class="modal">
+				<div class="modal-header">
+					<span class="text-title text-bold">Authorization</span>
+					<span class="modal-close" @click="openAuthorizeDialog = false"></span>
+				</div>
+				<div class="modal-content">
+					<fieldset>
+						<legend>Authorize by username and password</legend>
+						<div class="flex column">
+							<div class="form-group">
+								<label>Username</label>
+								<input type="text" v-model="auth.username" class="form-control" placeholder="Username">
+							</div>
+							<div class="form-group">
+								<label>Password</label>
+								<input type="password"  v-model="auth.password" class="form-control" placeholder="Password">
+							</div>
+							<div class="form-group">
+								<label>Tenant</label>
+								<input type="text" v-model="auth.tenant" class="form-control" placeholder="Tenant">
+							</div>
+							<button class="self-end button outlined positive" @click="authorize">Authorize</button>
+						</div>
+					</fieldset>
+
+					<div class="form-group">
+						<label>Token</label>
+						<textarea style="height:100px;width: 100%;" v-model="auth.token" class="form-control" placeholder="Token" ></textarea>
+					</div>
+
+				</div>
+				<div class="modal-actions">
+
+					<button class="button flat" @click="openAuthorizeDialog = false">Cancel</button>
+					<button class="button flat m-x-xs" @click="resetAuthorization">Reset</button>
+					<button class="button" @click="saveAuthorize">Save</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		const { createApp } = Vue
+		const app = createApp({
+
+			data() {
+				return {
+					apiSearchText: "",
+					menu: [
+						{ id: "home", caption: "Home" },
+						{ id: "apis", caption: "REST API" },
+						{ id: "nodes", caption: "Nodes" },
+						{ id: "services", caption: "Services" }
+					],
+					page: "home",
+
+					requests: {
+
+					},
+					openAuthorizeDialog: false,
+					auth: {
+						    tenant:"",
+							username: "",
+							password: "",
+							token: ""
+						},
+						globalAuth:{
+							tenant:"",
+							username: "",
+							password: "",
+							token: ""
+						},
+					fields: {
+
+					},
+
+					broker: null,
+					nodes: [],
+					services: [],
+					actions: {},
+
+					showBrokerOptions: false
+				};
+			},
+
+			computed: {
+				filteredServices() {
+					return this.services.filter(svc => !svc.name.startsWith("$"));
+				},
+
+				filteredApis() {
+					const s = this.apiSearchText.toLocaleLowerCase();
+					if (!this.apiSearchText)
+						return this.requests;
+					else {
+						const reqs = {};
+						for (const key in this.requests) {
+							reqs[key] = this.requests[key]
+											.filter(r => r?.action?.toLocaleLowerCase().includes(s) ||
+											 r?.rest?.method?.toLocaleLowerCase().includes(s) ||
+											  r?.rest?.path?.toLocaleLowerCase().includes(s) ||
+											   r?.rest?.url?.toLocaleLowerCase().includes(s));
+						}
+						return reqs;
+					}
+				},
+			},
+
+			methods: {
+				resetAuthorization() {
+					this.auth = {
+						    tenant:"",
+							username: "",
+							password: "",
+							token: ""
+						};
+						this.saveAuthorize();
+				},
+
+				authorize() {
+					fetch("/api/v1/identity/auth/signin",{
+						method: "POST",
+						headers: {
+							"Content-Type": "application/json"
+						},
+						body: JSON.stringify(this.auth)
+
+					}).then(res => {
+						if (res.status == 401) {
+							this.openAuthorizeDialog = true;
+							alert("Invalid username or password");
+						} else if (res.status == 200) {
+							res.json().then(data => {
+								this.auth.token = res.headers.get("Authorization") || data.token;
+								this.auth.tenant = res.headers.get("x-tenant-id") || data.tenant;
+								// this.saveAuthorize();
+							});
+						}
+						else {
+							alert("Not authorized");
+						}
+					});
+				},
+
+				saveAuthorize() {
+					this.globalAuth = {...this.auth};
+					localStorage.setItem("globalAuth", JSON.stringify(this.globalAuth));
+					this.openAuthorizeDialog = false;
+				},
+
+                refreshApiPage(){
+					return this.updateServiceList();
+				},
+
+				showAuthorizeDialog() {
+					this.openAuthorizeDialog = true;
+				},
+
+				closeAuthorizeDialog(){
+					this.openAuthorizeDialog = false;
+				},
+
+				changePage(page) {
+					this.page = page;
+					localStorage.setItem("lastPage", this.page);
+					if (this.page == 'apis') {
+						return this.updateServiceList();
+					}
+					else {
+						this.updatePageResources();
+					}
+				},
+
+				humanize(ms) {
+					return ms > 1500 ? (ms / 1500).toFixed(2) + " s" : ms + " ms";
+				},
+
+				getServiceActions(svc) {
+					return Object.keys(svc.actions)
+						.map(name => this.actions[name])
+						.filter(action => !!action);
+				},
+
+				getActionParams(action, maxLen) {
+					if (action.action && action.action.params) {
+						const s = Object.keys(action.action.params).join(", ");
+						return s.length > maxLen ? s.substr(0, maxLen) + "…" : s;
+					}
+					return "-";
+				},
+
+				getActionREST(svc, action) {
+					if (action.action.rest) {
+						let prefix = svc.fullName || svc.name;
+						if (typeof(svc.settings.rest) == "string")
+							prefix = svc.settings.rest;
+
+						if (typeof action.action.rest == "string") {
+							if (action.action.rest.indexOf(" ") !== -1) {
+								const p = action.action.rest.split(" ");
+								return "<span class='badge'>" + p[0] + "</span> " + prefix + p[1];
+							} else {
+								return "<span class='badge'>*</span> " + prefix + action.action.rest;
+							}
+						} else {
+							return "<span class='badge'>" + (action.action.rest.method || "*") + "</span> " + prefix + action.action.rest.path;
+						}
+					}
+					return "";
+				},
+
+				getRest(item) {
+					if(!item.rest) return item.rest;
+					if (typeof item.rest === "object") return item.rest; // REST object
+					if (item.rest.indexOf(" ") !== -1) {
+						const p = item.rest.split(" ");
+						return { method: p[0], path: p[1] };
+					} else {
+						return { method: "*", path: item.rest };
+					}
+				},
+
+				getFields(item,method,url) {
+					if(!item.params) return [];
+					const r = [];
+					for (const key in item.params) {
+						if(key.startsWith('$')) continue;
+						if(item.params[key].readonly===true) continue;
+						if(item.params[key].hidden===true) continue;
+						const dataType =  item.params[key].type || item.params[key];
+						const hidden = item.params[key].hidden || false;
+						const required = item.params[key].required || false;
+						const optional = Array.isArray(item.params[key]) ? item.params[key].every(xx=>xx.optional===true) : item.params[key].optional || false;
+						const maxLength = item.params[key].max || undefined;
+						const minLength = item.params[key].min || undefined;
+						const pattern = item.params[key].pattern || undefined;
+						let type = "text";
+						let value =  item.params[key].default || undefined;
+						if (dataType.includes("number")) {type = "number";  };
+						if (dataType === "boolean") {type = "checkbox"; value = value || false;};
+						if (dataType === "string") type = "text";
+						if (dataType === "object") type = "textarea";
+						if (dataType === "array") type = "textarea";
+						if (dataType === "file") type = "file";
+						if (dataType === "date") type = "date";
+						if (dataType === "datetime") type = "datetime";
+						if (dataType === "time") type = "time";
+						if (dataType === "password") type = "password";
+						if (dataType === "enum") type = "select";
+						if (dataType === "enum-multi") type = "select-multi";
+
+						r.push({ name: key,
+							  label: key,optional,
+							  hidden,required,
+							  [type==='number'?'min':'minLength'] :minLength,
+							  [type==='number'?'max':'maxLength'] :maxLength,
+							  pattern,
+							  paramType: method==='GET' ? 'param' : 'body',
+							  value,
+							  type,dataType, value:undefined });
+					}
+					return r;
+				},
+
+				getService(fullName){
+					const svc = this.services.find(svc => svc.fullName == fullName);
+					return svc || {};
+				},
+
+				clearResponse(item){
+					item.response = undefined;
+					item.duration = undefined;
+					item.loading = false;
+					item.status = undefined;
+				},
+
+				callAction: function (item,fullName) {
+					if(!item.rest) return;
+					item.loading = true;
+					const service = this.services.find(svc => svc.name == fullName);
+					var startTime = Date.now();
+
+					const method = item.rest.method || "GET";
+					let url = item.rest.url;
+					let fields = item.fields;
+					let body = null;
+					let params = null;
+					if (fields) {
+						body = {};
+						params = {};
+						fields.forEach(field => {
+							const value = field.value;
+							if (field.paramType == "body"){
+								body[field.name] = value;
+								if(value===undefined && field.optional===true){
+									delete body[field.name];
+								}
+							}
+							else if (field.paramType == "param"){
+
+								params[field.name] = value;
+								if(value===undefined && field.optional===true){
+									delete params[field.name];
+								}
+							}
+
+							else if (field.paramType == "url"){
+								if(value===undefined && field.optional===true){
+									url = url.replace(`:${field.name}`,'');
+								}
+								else{
+									url = url.replace(`:${field.name}`,value);
+								}
+							}
+							url = url.replace(`:${field.name}`,value);
+						});
+
+						if (body && method == "GET") {
+							body = null;
+						}
+						if (params && Object.keys(params).length > 0) {
+							const qparams = {};
+							for (const key in params) {
+								if(params[key]!==undefined){
+									qparams[key] = params[key];
+								}
+							}
+							url += "?" + new URLSearchParams(qparams).toString();
+						}
+
+					}
+					const authtoken = this.globalAuth.token;
+					const tenant = this.globalAuth.tenant;
+					const authHeader = {};
+					if(authtoken){
+						authHeader['Authorization'] = `Bearer ${authtoken}`;
+					}
+					if(tenant){
+						authHeader["x-tenant"] = tenant;
+					}
+					return fetch(url, {
+						method,
+						body: body ? JSON.stringify(body) : null,
+					    headers: {
+							'Content-Type': 'application/json',
+							...authHeader
+						}
+						}).then(function(res) {
+							item.status = res.status;
+							item.duration = Date.now() - startTime;
+							return res.json().then(json => {
+								item.response = json;
+								item.loading = false;
+								if (item.afterResponse)
+									return item.afterResponse(json);
+							});
+						}).catch(function (err) {
+							item.status = "ERR";
+							item.duration = Date.now() - startTime;
+							item.response = err.message;
+							item.loading = false;
+							console.log(err);
+						});
+
+				},
+
+				updateBrokerOptions: function (name) {
+					this.req("/api/~node/options", null).then(res => this.broker = res);
+				},
+
+
+				updateNodeList: function (name) {
+					this.req("/api/~node/list", null).then(res => {
+						res.sort((a,b) => a.id.localeCompare(b.id));
+						this.nodes = res;
+					});
+				},
+
+				updateServiceList: function (name) {
+					this.req("/api/~node/services?withActions=true", null)
+						.then(res => {
+							this.services = res;
+							res.sort((a,b) => a.name.localeCompare(b.name));
+							res.forEach(svc => svc.nodes.sort());
+						})
+						.then(() => this.req("/api/~node/actions", null))
+						.then(res => {
+							res.sort((a,b) => a.name.localeCompare(b.name));
+							const actions = res.reduce((a,b) => {
+								a[b.name] = b;
+								return a;
+							}, {});
+							this.actions = actions;
+							if(this.page==='apis'){
+								this.requests = {};
+								for (const service of this.services) {
+									this.requests[service.fullName] = [];
+									const version = service.version ? "v"+service.version+"/" : "";
+									for (const key in service.actions) {
+										const action = service.actions[key];
+										if(!action.rest) continue;
+										const req = {
+											expand:false,
+											loading:false,
+											id: action.name,
+											action: action.name,
+											rest: this.getRest(action),
+											fields: action.fields,
+											response: null,
+											status: null,
+											duration: null,
+											afterResponse: action.afterResponse
+										};
+										const baseUrl = service.settings.rest;
+										if(req.rest.method==='*'){
+											['GET','POST','PUT','PATCH','DELETE'].forEach(method => {
+												const req2 = Object.assign({}, req);
+												req2.id = req2.id+'.'+method.toLocaleLowerCase();
+												req2.rest = Object.assign({}, req.rest);
+												req2.rest.method = method;
+												const url = baseUrl ? `/api${baseUrl}${req2.rest.path}` : `/api/${version}${service.name}${req2.rest.path}`;
+												req2.rest.url = url;
+												req2.fields = this.getFields(action,req2.rest.method,req2.rest.url);
+												this.requests[service.fullName].push(req2);
+											});
+										} else {
+											let version = service.version ? "v"+service.version+"/" : "";
+											let url = baseUrl ? `/api${baseUrl}${req.rest.path}`: `/api/${version}${service.name}${req.rest.path}`;
+											req.rest.url = url;
+											req.fields = this.getFields(action,req.rest.method,req.rest.url);
+											this.requests[service.fullName].push(req);
+										}
+
+									}
+									if(this.requests[service.fullName].length===0) delete this.requests[service.fullName];
+								}
+							}
+						});
+				},
+
+				req: function (url, params) {
+					return fetch(url, { method: "GET", body: params ? JSON.stringify(params) : null })
+						.then(function(res) {
+							return res.json();
+						});
+				},
+
+				updatePageResources() {
+					if (this.page == 'nodes') return this.updateNodeList();
+					if (this.page == 'services') return this.updateServiceList();
+
+				}
+			},
+
+			mounted() {
+				var self = this;
+
+				const page = localStorage.getItem("lastPage");
+				this.page = page ? page : 'home';
+				if(this.page==='apis'){
+					this.refreshApiPage();
+				}
+				const globalAuth = localStorage.getItem("globalAuth");
+				this.globalAuth = globalAuth ? JSON.parse(globalAuth) : {};
+
+				setInterval(function () {
+					self.updatePageResources();
+				}, 2000);
+
+				this.updateBrokerOptions();
+			}
+
+		});
+		app.mount('#app');
+	</script>
+</body>
+</html>

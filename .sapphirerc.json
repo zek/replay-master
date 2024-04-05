@@ -1,0 +1,16 @@
+{
+  "projectLanguage": "ts",
+  "locations": {
+    "base": "./services/discord/",
+    "arguments": "arguments",
+    "commands": "commands/",
+    "listeners": "listeners/",
+    "preconditions": "preconditions",
+    "interaction-handlers": "interaction-handlers",
+    "routes": ""
+  },
+  "customFileTemplates": {
+    "enabled": false,
+    "location": ""
+  }
+}

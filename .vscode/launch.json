@@ -1,0 +1,33 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug",
+      "program": "${workspaceRoot}/node_modules/moleculer/bin/moleculer-runner.js",
+      "sourceMaps": true,
+      "runtimeArgs": [
+        "-r",
+        "ts-node/register"
+      ],
+      "cwd": "${workspaceRoot}",
+      "args": [
+        "services/**/*.service.ts"
+      ]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Jest",
+      "program": "${workspaceRoot}/node_modules/jest-cli/bin/jest.js",
+      "args": [
+        "--runInBand"
+      ],
+      "cwd": "${workspaceRoot}",
+      "runtimeArgs": [
+        "--nolazy"
+      ]
+    }
+  ]
+}

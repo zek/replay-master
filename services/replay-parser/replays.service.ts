@@ -18,7 +18,6 @@ interface ServiceThis extends Service<ReplaysSettings>, MoleculerDbMethods {
 
 const ReplaysService: ServiceSchema<ReplaysSettings> & { methods: DbServiceMethods } = {
   name: "replays",
-  // version: 1
 
   /**
    * Mixins
@@ -29,10 +28,6 @@ const ReplaysService: ServiceSchema<ReplaysSettings> & { methods: DbServiceMetho
    * Settings
    */
   settings: {
-    // Available fields in the responses
-    // fields: ["_id", "game", "origin", "sharecode", "replayUrl", "map"],
-
-    // Validator for the `create` & `insert` actions.
     entityValidator: {
       sharecode: { type: "string", optiona: true },
       origin: { type: "enum", values: Object.values(ReplayOrigin) },
@@ -69,20 +64,7 @@ const ReplaysService: ServiceSchema<ReplaysSettings> & { methods: DbServiceMetho
   /**
    * Methods
    */
-  methods: {
-    /**
-     * Loading sample data to the collection.
-     * It is called in the DB.mixin after the database
-     * connection establishing & the collection is empty.
-     */
-    async seedDB(this: ServiceThis) {
-      /* await this.adapter.insertMany([
-        { name: "Samsung Galaxy S10 Plus", quantity: 10, price: 704 },
-        { name: "iPhone 11 Pro", quantity: 25, price: 999 },
-        { name: "Huawei P30 Pro", quantity: 15, price: 679 },
-      ]); */
-    },
-  },
+  methods: {},
 
   /**
    * Fired after database connection establishing.

@@ -1,4 +1,14 @@
-# CS2 Replay Master
+# Replay Master - Counter-Strike 2
+
+Welcome to Replay Master, a Discord bot designed for Counter Strike 2 players. 
+This bot makes it easy to record your game highlights by using a matchmaking sharecode.
+
+## Features
+- **Automatic Recording**: Give the bot a sharecode, and it will record your game highlights.
+- **Simple Integration**: Add Replay Master to your Discord server with minimal setup.
+- **Quick Access to Highlights**: View your recorded highlights directly on Discord.
+
+Start using Replay Master today to capture and share your best gaming moments!
 
 ## Prerequisites
 
@@ -94,7 +104,7 @@ SERVICEDIR="dist/services" SERVICES="discord/*.service.js,http/api,replay-downlo
 
 ## Contributing
 
-We welcome contributions from the community! If you'd like to contribute to CS2 Replay Recorder, please follow these steps:
+We welcome contributions from the community! If you'd like to contribute to CS2 Replay Master, please follow these steps:
 
 1. Fork the repository.
 2. Create a new branch (`git checkout -b feature/new-feature`).

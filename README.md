@@ -1,16 +1,16 @@
-# Replay Master - Counter-Strike 2
+# 🎮 Replay Master - Counter-Strike 2
 
 Welcome to Replay Master, a Discord bot designed for Counter Strike 2 players. 
 This bot makes it easy to record your game highlights by using a matchmaking sharecode.
 
-## Features
+🚀 **Features**:
 - **Automatic Recording**: Give the bot a sharecode, and it will record your game highlights.
 - **Simple Integration**: Add Replay Master to your Discord server with minimal setup.
 - **Quick Access to Highlights**: View your recorded highlights directly on Discord.
 
 Start using Replay Master today to capture and share your best gaming moments!
 
-## Prerequisites
+🔧 **Get Started**:
 
 We suggest using Chocolatey, a package manager for Windows, to simplify the software installation process. Refer to the [Chocolatey Installation Guide](https://chocolatey.org/install) for setup details.
 
@@ -102,13 +102,6 @@ SERVICEDIR="dist/services" SERVICES="discord/*.service.js,http/api,replay-downlo
 - **replay-parser/replay-parser**: Analyzes match data from CS2 replay files, including player events, scores, and match details, for structured analysis and use.
 - **replay-recorder**: Records CS2 replays using HLAE, captures highlights, and merges them into a single video.
 
-## Contributing
-
-We welcome contributions from the community! If you'd like to contribute to CS2 Replay Master, please follow these steps:
-
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature/new-feature`).
-3. Make your changes.
-4. Commit your changes (`git commit -am 'Add new feature'`).
-5. Push to the branch (`git push origin feature/new-feature`).
-6. Create a new Pull Request.
+👥 **Community and Contributions**:
+- Contributions are highly encouraged! See the 'Contributing' section for how to get involved.
+- Inspired by [STRIKER](https://github.com/Run1e/STRIKER/)

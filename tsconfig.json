@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "baseUrl": "./",
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
 
@@ -13,6 +14,7 @@
     "lib": ["ES2023"],
     "target": "ES2022",
     "module": "commonjs",
+    "allowJs": true,
     "moduleResolution": "node",
     "paths": {
       "*": [

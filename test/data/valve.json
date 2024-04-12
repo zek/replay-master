@@ -1,0 +1,3822 @@
+{
+  "json": {
+    "convars": {
+      "mp_maxrounds": "31",
+      "steamworks_sessionid_server": "8799127579581",
+      "tv_transmitall": "1"
+    },
+    "halves": [
+      {
+        "rounds": {
+          "1": [
+            {
+              "attacker": "76561199572993407",
+              "attacker_place": "Catwalk",
+              "attacker_team": 2,
+              "pos": [
+                -1201.8514404296875,
+                -641.5908203125,
+                -167.96875
+              ],
+              "thrusmoke": false,
+              "tick": 2525,
+              "victim": "76561197998175883",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "glock"
+            },
+            {
+              "attacker": "76561199562533004",
+              "attacker_place": "SnipersNest",
+              "attacker_team": 3,
+              "pos": [
+                -546.4212646484375,
+                -495.5850830078125,
+                -165.71527099609375
+              ],
+              "thrusmoke": false,
+              "tick": 2734,
+              "victim": "76561199572993407",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "usp_silencer"
+            },
+            {
+              "attacker": "76561199562533004",
+              "attacker_place": "SnipersNest",
+              "attacker_team": 3,
+              "pos": [
+                -99.10943603515625,
+                -423.50048828125,
+                -167.9144287109375
+              ],
+              "thrusmoke": false,
+              "tick": 2795,
+              "victim": "76561199214323852",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "usp_silencer"
+            },
+            {
+              "attacker": "76561198868262356",
+              "attacker_place": "Catwalk",
+              "attacker_team": 2,
+              "pos": [
+                -1177.352294921875,
+                -728.9923706054688,
+                -167.96875
+              ],
+              "thrusmoke": false,
+              "tick": 2889,
+              "victim": "76561199562533004",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "glock"
+            },
+            {
+              "attacker": "76561198418589410",
+              "attacker_place": "SnipersNest",
+              "attacker_team": 3,
+              "pos": [
+                -856.545166015625,
+                -298.0975341796875,
+                -166.915283203125
+              ],
+              "thrusmoke": false,
+              "tick": 3288,
+              "victim": "76561198868262356",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "usp_silencer"
+            },
+            {
+              "attacker": "76561198175694313",
+              "attacker_place": "Underpass",
+              "attacker_team": 2,
+              "pos": [
+                -544.0126342773438,
+                -1025.4119873046875,
+                -167.96875
+              ],
+              "thrusmoke": false,
+              "tick": 3441,
+              "victim": "76561198408751282",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "glock"
+            },
+            {
+              "attacker": "76561198175694313",
+              "attacker_place": "Middle",
+              "attacker_team": 2,
+              "pos": [
+                -1182.696044921875,
+                -681.1663208007812,
+                -167.96875
+              ],
+              "thrusmoke": false,
+              "tick": 3568,
+              "victim": "76561198142737073",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "glock"
+            },
+            {
+              "attacker": "76561198175694313",
+              "attacker_place": "Middle",
+              "attacker_team": 2,
+              "pos": [
+                -1171.021240234375,
+                -517.692138671875,
+                -167.96875
+              ],
+              "thrusmoke": false,
+              "tick": 3766,
+              "victim": "76561198418589410",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "glock"
+            }
+          ],
+          "2": [
+            {
+              "attacker": "76561198408751282",
+              "attacker_place": "SnipersNest",
+              "attacker_team": 3,
+              "pos": [
+                460.9350280761719,
+                -427.658203125,
+                -159.96875
+              ],
+              "thrusmoke": false,
+              "tick": 6540,
+              "victim": "76561199214323852",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "deagle"
+            },
+            {
+              "attacker": "76561199572993407",
+              "attacker_place": "TopofMid",
+              "attacker_team": 2,
+              "pos": [
+                -278.24462890625,
+                -542.4232788085938,
+                -250.32086181640625
+              ],
+              "thrusmoke": false,
+              "tick": 6592,
+              "victim": "76561199562533004",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "ak47"
+            },
+            {
+              "attacker": "76561198408751282",
+              "attacker_place": "SnipersNest",
+              "attacker_team": 3,
+              "pos": [
+                -226.9154052734375,
+                -360.85369873046875,
+                -166.60400390625
+              ],
+              "thrusmoke": false,
+              "tick": 6913,
+              "victim": "76561199042514860",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "deagle"
+            },
+            {
+              "attacker": "76561198418589410",
+              "attacker_place": "SideAlley",
+              "attacker_team": 3,
+              "pos": [
+                177.4321746826172,
+                -149.284423828125,
+                -151.96875
+              ],
+              "thrusmoke": false,
+              "tick": 7483,
+              "victim": "76561198868262356",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "mp9"
+            },
+            {
+              "attacker": "76561198175694313",
+              "attacker_place": "TopofMid",
+              "attacker_team": 2,
+              "pos": [
+                447.6910705566406,
+                503.5350341796875,
+                -262.7213134765625
+              ],
+              "thrusmoke": false,
+              "tick": 7777,
+              "victim": "76561198418589410",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "ak47"
+            },
+            {
+              "attacker": "76561198408751282",
+              "attacker_place": "BombsiteA",
+              "attacker_team": 3,
+              "pos": [
+                -796.3599243164062,
+                -27.16925048828125,
+                -159.20123291015625
+              ],
+              "thrusmoke": false,
+              "tick": 7815,
+              "victim": "76561199572993407",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "deagle"
+            },
+            {
+              "attacker": "76561198175694313",
+              "attacker_place": "TopofMid",
+              "attacker_team": 2,
+              "pos": [
+                -168.8211669921875,
+                -464.6795654296875,
+                -167.01556396484375
+              ],
+              "thrusmoke": false,
+              "tick": 8537,
+              "victim": "76561198142737073",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "ak47"
+            },
+            {
+              "attacker": "76561197998175883",
+              "attacker_place": "Apartments",
+              "attacker_team": 3,
+              "pos": [
+                -960.7531127929688,
+                591.96875,
+                -79.96875
+              ],
+              "thrusmoke": false,
+              "tick": 11434,
+              "victim": "76561198175694313",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "ssg08"
+            }
+          ],
+          "3": [
+            {
+              "attacker": "76561199042514860",
+              "attacker_place": "PalaceInterior",
+              "attacker_team": 2,
+              "pos": [
+                957.357666015625,
+                -2020.8992919921875,
+                -71.96875
+              ],
+              "thrusmoke": false,
+              "tick": 14383,
+              "victim": "76561198418589410",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "mac10"
+            },
+            {
+              "attacker": "76561198408751282",
+              "attacker_place": "BombsiteA",
+              "attacker_team": 3,
+              "pos": [
+                -199.253173828125,
+                -1617.2567138671875,
+                -167.96875
+              ],
+              "thrusmoke": false,
+              "tick": 14655,
+              "victim": "76561199572993407",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "ak47"
+            },
+            {
+              "attacker": "76561199214323852",
+              "attacker_place": "BombsiteA",
+              "attacker_team": 2,
+              "pos": [
+                -559.8363037109375,
+                -1710.5260009765625,
+                -176.6212158203125
+              ],
+              "thrusmoke": false,
+              "tick": 14835,
+              "victim": "76561198408751282",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "glock"
+            },
+            {
+              "attacker": "76561199562533004",
+              "attacker_place": "Stairs",
+              "attacker_team": 3,
+              "pos": [
+                -95.8009033203125,
+                -1675.5970458984375,
+                -167.96875
+              ],
+              "thrusmoke": false,
+              "tick": 15011,
+              "victim": "76561198868262356",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "m4a1_silencer"
+            },
+            {
+              "attacker": "76561198175694313",
+              "attacker_place": "BombsiteA",
+              "attacker_team": 2,
+              "pos": [
+                -526.838134765625,
+                -1571.4322509765625,
+                -39.96875
+              ],
+              "thrusmoke": false,
+              "tick": 15020,
+              "victim": "76561199562533004",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "galilar"
+            },
+            {
+              "attacker": "76561198142737073",
+              "attacker_place": "BombsiteA",
+              "attacker_team": 3,
+              "pos": [
+                -60.46685791015625,
+                -1604.889404296875,
+                -167.96875
+              ],
+              "thrusmoke": false,
+              "tick": 15102,
+              "victim": "76561199214323852",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "famas"
+            },
+            {
+              "attacker": "76561198175694313",
+              "attacker_place": "Stairs",
+              "attacker_team": 2,
+              "pos": [
+                -666.5118408203125,
+                -1537.385498046875,
+                -167.96875
+              ],
+              "thrusmoke": false,
+              "tick": 15197,
+              "victim": "76561198142737073",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "galilar"
+            },
+            {
+              "attacker": "76561198175694313",
+              "attacker_place": "BombsiteA",
+              "attacker_team": 2,
+              "pos": [
+                -642.6221313476562,
+                -1292.572509765625,
+                -167.96875
+              ],
+              "thrusmoke": false,
+              "tick": 16224,
+              "victim": "76561197998175883",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "galilar"
+            }
+          ],
+          "4": [
+            {
+              "attacker": "76561198175694313",
+              "attacker_place": "BackAlley",
+              "attacker_team": 2,
+              "pos": [
+                582.7919921875,
+                813.4376831054688,
+                -135.96875
+              ],
+              "thrusmoke": false,
+              "tick": 19664,
+              "victim": "76561198408751282",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "ak47"
+            },
+            {
+              "attacker": "76561199562533004",
+              "attacker_place": "House",
+              "attacker_team": 3,
+              "pos": [
+                -176.4095458984375,
+                858.75439453125,
+                -134.99615478515625
+              ],
+              "thrusmoke": false,
+              "tick": 19814,
+              "victim": "76561199042514860",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "deagle"
+            },
+            {
+              "attacker": "76561197998175883",
+              "attacker_place": "BombsiteB",
+              "attacker_team": 3,
+              "pos": [
+                -1872.874267578125,
+                712.7152709960938,
+                -47.96875
+              ],
+              "thrusmoke": false,
+              "tick": 20319,
+              "victim": "76561199572993407",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "m4a1_silencer"
+            },
+            {
+              "attacker": "76561198868262356",
+              "attacker_place": "Apartments",
+              "attacker_team": 2,
+              "pos": [
+                -2303.94287109375,
+                608.6128540039062,
+                -85.96875
+              ],
+              "thrusmoke": false,
+              "tick": 20359,
+              "victim": "76561197998175883",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "ak47"
+            },
+            {
+              "attacker": "76561198418589410",
+              "attacker_place": "Truck",
+              "attacker_team": 3,
+              "pos": [
+                -1698.94775390625,
+                680.095703125,
+                -47.96875
+              ],
+              "thrusmoke": false,
+              "tick": 20498,
+              "victim": "76561199214323852",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "deagle"
+            },
+            {
+              "attacker": "76561199562533004",
+              "attacker_place": "Catwalk",
+              "attacker_team": 3,
+              "pos": [
+                -1890.687255859375,
+                730.04150390625,
+                -47.96875
+              ],
+              "thrusmoke": false,
+              "tick": 20881,
+              "victim": "76561198868262356",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "deagle"
+            },
+            {
+              "attacker": "76561198175694313",
+              "attacker_place": "BackAlley",
+              "attacker_team": 2,
+              "pos": [
+                -1670.1767578125,
+                823.9052124023438,
+                -47.96875
+              ],
+              "thrusmoke": false,
+              "tick": 21517,
+              "victim": "76561198418589410",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "ak47"
+            },
+            {
+              "attacker": "76561198175694313",
+              "attacker_place": "Apartments",
+              "attacker_team": 2,
+              "pos": [
+                -2154.08642578125,
+                786.6397705078125,
+                -108.2969970703125
+              ],
+              "thrusmoke": false,
+              "tick": 21859,
+              "victim": "76561198142737073",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "ak47"
+            },
+            {
+              "attacker": "76561199562533004",
+              "attacker_place": "Truck",
+              "attacker_team": 3,
+              "pos": [
+                -1635.1229248046875,
+                778.8975830078125,
+                -47.96875
+              ],
+              "thrusmoke": false,
+              "tick": 22297,
+              "victim": "76561198175694313",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "m4a1_silencer"
+            }
+          ],
+          "5": [
+            {
+              "attacker": "76561198418589410",
+              "attacker_place": "PalaceInterior",
+              "attacker_team": 3,
+              "pos": [
+                869.0195922851562,
+                -2217.197265625,
+                -39.96875
+              ],
+              "thrusmoke": false,
+              "tick": 25135,
+              "victim": "76561199214323852",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "mp9"
+            },
+            {
+              "attacker": "76561199572993407",
+              "attacker_place": "PalaceInterior",
+              "attacker_team": 2,
+              "pos": [
+                1049.175048828125,
+                -1462.7808837890625,
+                -167.96875
+              ],
+              "thrusmoke": false,
+              "tick": 26479,
+              "victim": "76561198418589410",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "galilar"
+            },
+            {
+              "attacker": "76561198175694313",
+              "attacker_place": "TRamp",
+              "attacker_team": 2,
+              "pos": [
+                -693.9371948242188,
+                -1684.073974609375,
+                -173.97601318359375
+              ],
+              "thrusmoke": false,
+              "tick": 28419,
+              "victim": "76561198142737073",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "ak47"
+            },
+            {
+              "attacker": "76561199562533004",
+              "attacker_place": "Stairs",
+              "attacker_team": 3,
+              "pos": [
+                184.5596923828125,
+                -2372.651123046875,
+                -39.96875
+              ],
+              "thrusmoke": false,
+              "tick": 28596,
+              "victim": "76561199572993407",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "m4a1"
+            },
+            {
+              "attacker": "76561199562533004",
+              "attacker_place": "Stairs",
+              "attacker_team": 3,
+              "pos": [
+                -120.9114990234375,
+                -1529.049560546875,
+                -53.96875
+              ],
+              "thrusmoke": false,
+              "tick": 28982,
+              "victim": "76561198175694313",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "m4a1"
+            },
+            {
+              "attacker": "76561199562533004",
+              "attacker_place": "Stairs",
+              "attacker_team": 3,
+              "pos": [
+                -116.26385498046875,
+                -1624.239013671875,
+                -167.96875
+              ],
+              "thrusmoke": false,
+              "tick": 29098,
+              "victim": "76561198868262356",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "m4a1"
+            },
+            {
+              "attacker": "76561199042514860",
+              "attacker_place": "Middle",
+              "attacker_team": 2,
+              "pos": [
+                -574.5257568359375,
+                -1117.34033203125,
+                -167.96875
+              ],
+              "thrusmoke": false,
+              "tick": 29587,
+              "victim": "76561199562533004",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "ak47"
+            },
+            {
+              "attacker": "76561197998175883",
+              "attacker_place": "BombsiteB",
+              "attacker_team": 3,
+              "pos": [
+                -1939.7034912109375,
+                525.4010620117188,
+                -165.71875
+              ],
+              "thrusmoke": false,
+              "tick": 30950,
+              "victim": "76561199042514860",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "m4a1_silencer"
+            }
+          ],
+          "6": [
+            {
+              "attacker": "76561199562533004",
+              "attacker_place": "Middle",
+              "attacker_team": 3,
+              "pos": [
+                334.9424743652344,
+                -386.6541748046875,
+                -165.49627685546875
+              ],
+              "thrusmoke": false,
+              "tick": 33460,
+              "victim": "76561199214323852",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "m4a1"
+            },
+            {
+              "attacker": "76561199562533004",
+              "attacker_place": "Middle",
+              "attacker_team": 3,
+              "pos": [
+                206.0526580810547,
+                -208.72833251953125,
+                -167.869384765625
+              ],
+              "thrusmoke": false,
+              "tick": 33549,
+              "victim": "76561199572993407",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "m4a1"
+            },
+            {
+              "attacker": "76561198175694313",
+              "attacker_place": "TopofMid",
+              "attacker_team": 2,
+              "pos": [
+                -160.7554931640625,
+                -754.7760009765625,
+                -225.65625
+              ],
+              "thrusmoke": false,
+              "tick": 33582,
+              "victim": "76561199562533004",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "galilar"
+            },
+            {
+              "attacker": "76561198142737073",
+              "attacker_place": "Middle",
+              "attacker_team": 3,
+              "pos": [
+                353.5458679199219,
+                -28.76580810546875,
+                -195.4559326171875
+              ],
+              "thrusmoke": false,
+              "tick": 33666,
+              "victim": "76561198175694313",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "mp7"
+            },
+            {
+              "attacker": "76561198868262356",
+              "attacker_place": "TopofMid",
+              "attacker_team": 2,
+              "pos": [
+                -152.9876708984375,
+                -758.3767700195312,
+                -224.0047607421875
+              ],
+              "thrusmoke": false,
+              "tick": 34184,
+              "victim": "76561198142737073",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "ak47"
+            },
+            {
+              "attacker": "76561199042514860",
+              "attacker_place": "Jungle",
+              "attacker_team": 2,
+              "pos": [
+                75.99907684326172,
+                -2215.9755859375,
+                14.0625
+              ],
+              "thrusmoke": false,
+              "tick": 37824,
+              "victim": "76561198418589410",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "galilar"
+            },
+            {
+              "attacker": "76561198868262356",
+              "attacker_place": "BombsiteA",
+              "attacker_team": 2,
+              "pos": [
+                32.53339385986328,
+                -2006.771728515625,
+                -39.96875
+              ],
+              "thrusmoke": false,
+              "tick": 38318,
+              "victim": "76561198408751282",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "ak47"
+            },
+            {
+              "attacker": "76561197998175883",
+              "attacker_place": "Connector",
+              "attacker_team": 3,
+              "pos": [
+                -441.9140625,
+                -2173.242919921875,
+                -179.587646484375
+              ],
+              "thrusmoke": false,
+              "tick": 38838,
+              "victim": "76561198868262356",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "ak47"
+            },
+            {
+              "attacker": "76561199042514860",
+              "attacker_place": "BombsiteA",
+              "attacker_team": 2,
+              "pos": [
+                -764.3929443359375,
+                -1659.3492431640625,
+                -171.5035400390625
+              ],
+              "thrusmoke": false,
+              "tick": 39446,
+              "victim": "76561197998175883",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "galilar"
+            }
+          ],
+          "7": [
+            {
+              "attacker": "76561199562533004",
+              "attacker_place": "Connector",
+              "attacker_team": 3,
+              "pos": [
+                413.053955078125,
+                -461.937255859375,
+                -165.93402099609375
+              ],
+              "thrusmoke": false,
+              "tick": 42072,
+              "victim": "76561198868262356",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "deagle"
+            },
+            {
+              "attacker": "76561198408751282",
+              "attacker_place": "Middle",
+              "attacker_team": 3,
+              "pos": [
+                463.1104736328125,
+                -474.2437744140625,
+                -159.96875
+              ],
+              "thrusmoke": false,
+              "tick": 42089,
+              "victim": "76561199572993407",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "m4a1_silencer"
+            },
+            {
+              "attacker": "76561198418589410",
+              "attacker_place": "BombsiteA",
+              "attacker_team": 3,
+              "pos": [
+                -496.03125,
+                -1341.2210693359375,
+                -155.78314208984375
+              ],
+              "thrusmoke": false,
+              "tick": 42711,
+              "victim": "76561198408751282",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "fiveseven"
+            },
+            {
+              "attacker": "76561199042514860",
+              "attacker_place": "TopofMid",
+              "attacker_team": 2,
+              "pos": [
+                438.10888671875,
+                445.0479431152344,
+                -261.770263671875
+              ],
+              "thrusmoke": false,
+              "tick": 43083,
+              "victim": "76561198142737073",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "ak47"
+            },
+            {
+              "attacker": "76561198175694313",
+              "attacker_place": "Middle",
+              "attacker_team": 2,
+              "pos": [
+                -198.4326171875,
+                -729.5105590820312,
+                -239.96875
+              ],
+              "thrusmoke": false,
+              "tick": 43606,
+              "victim": "76561198418589410",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "ak47"
+            }
+          ],
+          "8": [
+            {
+              "attacker": "76561199562533004",
+              "attacker_place": "TSpawn",
+              "attacker_team": 3,
+              "pos": [
+                515.2963256835938,
+                532.3045654296875,
+                -259.95709228515625
+              ],
+              "thrusmoke": false,
+              "tick": 49890,
+              "victim": "76561199214323852",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "ak47"
+            },
+            {
+              "attacker": "76561197998175883",
+              "attacker_place": "BombsiteA",
+              "attacker_team": 3,
+              "pos": [
+                -578.6979370117188,
+                -1017.2255859375,
+                -167.96875
+              ],
+              "thrusmoke": false,
+              "tick": 53973,
+              "victim": "76561198175694313",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "m4a1_silencer"
+            },
+            {
+              "attacker": "76561199214323852",
+              "attacker_place": "Middle",
+              "attacker_team": 2,
+              "pos": [
+                462.7723388671875,
+                523.8145141601562,
+                -261.06005859375
+              ],
+              "thrusmoke": false,
+              "tick": 54107,
+              "victim": "76561198142737073",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "ak47"
+            },
+            {
+              "attacker": "76561197998175883",
+              "attacker_place": "BombsiteA",
+              "attacker_team": 3,
+              "pos": [
+                -924.2302856445312,
+                -1394.052734375,
+                -167.96875
+              ],
+              "thrusmoke": false,
+              "tick": 54649,
+              "victim": "76561199572993407",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "m4a1_silencer"
+            },
+            {
+              "attacker": "76561198868262356",
+              "attacker_place": "TopofMid",
+              "attacker_team": 2,
+              "pos": [
+                620.3141479492188,
+                833.33447265625,
+                -118.01629638671875
+              ],
+              "thrusmoke": false,
+              "tick": 54799,
+              "victim": "76561198408751282",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "ak47"
+            },
+            {
+              "attacker": "76561199214323852",
+              "attacker_place": "Middle",
+              "attacker_team": 2,
+              "pos": [
+                -1024.8133544921875,
+                -335.8968505859375,
+                -367.96875
+              ],
+              "thrusmoke": false,
+              "tick": 55286,
+              "victim": "76561198418589410",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "hegrenade"
+            },
+            {
+              "attacker": "76561199214323852",
+              "attacker_place": "Connector",
+              "attacker_team": 2,
+              "pos": [
+                -508.30584716796875,
+                -1364.5413818359375,
+                -137.12689208984375
+              ],
+              "thrusmoke": false,
+              "tick": 56967,
+              "victim": "76561197998175883",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "ak47"
+            },
+            {
+              "attacker": "76561199562533004",
+              "attacker_place": "Catwalk",
+              "attacker_team": 3,
+              "pos": [
+                -806.109619140625,
+                -2270.0478515625,
+                -177.37896728515625
+              ],
+              "thrusmoke": false,
+              "tick": 58099,
+              "victim": "76561198868262356",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "ak47"
+            },
+            {
+              "attacker": "76561199562533004",
+              "attacker_place": "Catwalk",
+              "attacker_team": 3,
+              "pos": [
+                -1182.9725341796875,
+                -695.437255859375,
+                -167.96875
+              ],
+              "thrusmoke": false,
+              "tick": 58240,
+              "victim": "76561199214323852",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "ak47"
+            },
+            {
+              "attacker": "76561199042514860",
+              "attacker_place": "BombsiteA",
+              "attacker_team": 2,
+              "pos": [
+                -509.29583740234375,
+                -1592.4375,
+                -39.96875
+              ],
+              "thrusmoke": false,
+              "tick": 58958,
+              "victim": "76561199562533004",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "ak47"
+            }
+          ],
+          "9": [
+            {
+              "attacker": "76561198175694313",
+              "attacker_place": "BombsiteB",
+              "attacker_team": 2,
+              "pos": [
+                -906.3030395507812,
+                294.1895446777344,
+                -167.54833984375
+              ],
+              "thrusmoke": false,
+              "tick": 62979,
+              "victim": "76561199562533004",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "ak47"
+            },
+            {
+              "attacker": "76561198418589410",
+              "attacker_place": "Catwalk",
+              "attacker_team": 3,
+              "pos": [
+                -2608.149169921875,
+                384.8369140625,
+                -167.96875
+              ],
+              "thrusmoke": false,
+              "tick": 63104,
+              "victim": "76561198175694313",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "ssg08"
+            },
+            {
+              "attacker": "76561198418589410",
+              "attacker_place": "Catwalk",
+              "attacker_team": 3,
+              "pos": [
+                -1987.03125,
+                371.1812438964844,
+                -159.96875
+              ],
+              "thrusmoke": false,
+              "tick": 63518,
+              "victim": "76561198868262356",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "ssg08"
+            },
+            {
+              "attacker": "76561197998175883",
+              "attacker_place": "Shop",
+              "attacker_team": 3,
+              "pos": [
+                -2350.4755859375,
+                -164.70819091796875,
+                -163.87640380859375
+              ],
+              "thrusmoke": false,
+              "tick": 63672,
+              "victim": "76561199572993407",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "m4a1_silencer"
+            },
+            {
+              "attacker": "76561198142737073",
+              "attacker_place": "BombsiteB",
+              "attacker_team": 3,
+              "pos": [
+                -2158.149169921875,
+                767.1622924804688,
+                -127.96875
+              ],
+              "thrusmoke": false,
+              "tick": 63963,
+              "victim": "76561199214323852",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "mp7"
+            },
+            {
+              "attacker": "76561198142737073",
+              "attacker_place": "Truck",
+              "attacker_team": 3,
+              "pos": [
+                -1549.017578125,
+                761.656494140625,
+                -47.96875
+              ],
+              "thrusmoke": false,
+              "tick": 64399,
+              "victim": "76561199042514860",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "ak47"
+            }
+          ],
+          "10": [
+            {
+              "attacker": "76561199572993407",
+              "attacker_place": "TopofMid",
+              "attacker_team": 2,
+              "pos": [
+                -750.146728515625,
+                -788.96875,
+                -263.96875
+              ],
+              "thrusmoke": false,
+              "tick": 67475,
+              "victim": "76561198142737073",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "galilar"
+            },
+            {
+              "attacker": "76561198175694313",
+              "attacker_place": "TopofMid",
+              "attacker_team": 2,
+              "pos": [
+                -647.1436767578125,
+                -717.3251342773438,
+                -267.3201904296875
+              ],
+              "thrusmoke": false,
+              "tick": 67578,
+              "victim": "76561198408751282",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "ak47"
+            },
+            {
+              "attacker": "76561198175694313",
+              "attacker_place": "TopofMid",
+              "attacker_team": 2,
+              "pos": [
+                -1179.5367431640625,
+                -521.5779418945312,
+                -167.96875
+              ],
+              "thrusmoke": false,
+              "tick": 67883,
+              "victim": "76561198418589410",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "ak47"
+            },
+            {
+              "attacker": "76561197998175883",
+              "attacker_place": "BombsiteA",
+              "attacker_team": 3,
+              "pos": [
+                -747.3515625,
+                -1055.399169921875,
+                -167.96875
+              ],
+              "thrusmoke": false,
+              "tick": 68464,
+              "victim": "76561198175694313",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "m4a1_silencer"
+            },
+            {
+              "attacker": "76561197998175883",
+              "attacker_place": "Connector",
+              "attacker_team": 3,
+              "pos": [
+                -667.7352905273438,
+                -594.5474243164062,
+                -272.816162109375
+              ],
+              "thrusmoke": false,
+              "tick": 68927,
+              "victim": "76561199572993407",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "hegrenade"
+            },
+            {
+              "attacker": "76561197998175883",
+              "attacker_place": "Connector",
+              "attacker_team": 3,
+              "pos": [
+                -772.1093139648438,
+                -360.39013671875,
+                -167.7957763671875
+              ],
+              "thrusmoke": false,
+              "tick": 69584,
+              "victim": "76561198868262356",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "m4a1_silencer"
+            },
+            {
+              "attacker": "76561199042514860",
+              "attacker_place": "BombsiteB",
+              "attacker_team": 2,
+              "pos": [
+                -829.086669921875,
+                157.52560424804688,
+                -173.286865234375
+              ],
+              "thrusmoke": false,
+              "tick": 70279,
+              "victim": "76561197998175883",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "ak47"
+            },
+            {
+              "attacker": "76561199214323852",
+              "attacker_place": "BombsiteB",
+              "attacker_team": 2,
+              "pos": [
+                -2270.659423828125,
+                -163.67730712890625,
+                -167.04052734375
+              ],
+              "thrusmoke": false,
+              "tick": 71040,
+              "victim": "76561199562533004",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "ak47"
+            }
+          ],
+          "11": [
+            {
+              "attacker": "76561199562533004",
+              "attacker_place": "SnipersNest",
+              "attacker_team": 3,
+              "pos": [
+                441.7801513671875,
+                -807.5694580078125,
+                -159.96875
+              ],
+              "thrusmoke": false,
+              "tick": 73729,
+              "victim": "76561199572993407",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "deagle"
+            },
+            {
+              "attacker": "76561198418589410",
+              "attacker_place": "PalaceInterior",
+              "attacker_team": 3,
+              "pos": [
+                1304.9468994140625,
+                -1086.836181640625,
+                -167.96875
+              ],
+              "thrusmoke": false,
+              "tick": 74337,
+              "victim": "76561199214323852",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "mp9"
+            },
+            {
+              "attacker": "76561198868262356",
+              "attacker_place": "TSpawn",
+              "attacker_team": 2,
+              "pos": [
+                1339.58154296875,
+                -1328.0911865234375,
+                -167.96875
+              ],
+              "thrusmoke": false,
+              "tick": 74440,
+              "victim": "76561198418589410",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "ak47"
+            },
+            {
+              "attacker": "76561197998175883",
+              "attacker_place": "CTSpawn",
+              "attacker_team": 3,
+              "pos": [
+                226.50119018554688,
+                -1547.2320556640625,
+                -175.96875
+              ],
+              "thrusmoke": false,
+              "tick": 74956,
+              "victim": "76561198868262356",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "awp"
+            },
+            {
+              "attacker": "76561197998175883",
+              "attacker_place": "CTSpawn",
+              "attacker_team": 3,
+              "pos": [
+                281.47479248046875,
+                -1496.8155517578125,
+                -175.96875
+              ],
+              "thrusmoke": false,
+              "tick": 74956,
+              "victim": "76561198175694313",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "awp"
+            },
+            {
+              "attacker": "76561199042514860",
+              "attacker_place": "PalaceInterior",
+              "attacker_team": 2,
+              "pos": [
+                -951.801025390625,
+                -2561.4521484375,
+                -139.0860595703125
+              ],
+              "thrusmoke": false,
+              "tick": 75245,
+              "victim": "76561197998175883",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "ak47"
+            },
+            {
+              "attacker": "76561199562533004",
+              "attacker_place": "Stairs",
+              "attacker_team": 3,
+              "pos": [
+                267.7975769042969,
+                -1518.437255859375,
+                -175.96875
+              ],
+              "thrusmoke": false,
+              "tick": 75283,
+              "victim": "76561199042514860",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "deagle"
+            }
+          ],
+          "12": [
+            {
+              "attacker": "76561199214323852",
+              "attacker_place": "BackAlley",
+              "attacker_team": 2,
+              "pos": [
+                -22.66619873046875,
+                871.96875,
+                -135.96875
+              ],
+              "thrusmoke": false,
+              "tick": 79635,
+              "victim": "76561198142737073",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "ak47"
+            },
+            {
+              "attacker": "76561199572993407",
+              "attacker_place": "Underpass",
+              "attacker_team": 2,
+              "pos": [
+                -965.7413940429688,
+                -665.0792846679688,
+                -263.96875
+              ],
+              "thrusmoke": false,
+              "tick": 79654,
+              "victim": "76561198418589410",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "galilar"
+            },
+            {
+              "attacker": "76561197998175883",
+              "attacker_place": "Connector",
+              "attacker_team": 3,
+              "pos": [
+                -1022.997802734375,
+                -448.751953125,
+                -311.589111328125
+              ],
+              "thrusmoke": false,
+              "tick": 79922,
+              "victim": "76561199572993407",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "awp"
+            },
+            {
+              "attacker": "76561198175694313",
+              "attacker_place": "Apartments",
+              "attacker_team": 2,
+              "pos": [
+                -2076.579345703125,
+                813.7134399414062,
+                -43.96875
+              ],
+              "thrusmoke": false,
+              "tick": 81734,
+              "victim": "76561199562533004",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "ak47"
+            },
+            {
+              "attacker": "76561198408751282",
+              "attacker_place": "Catwalk",
+              "attacker_team": 3,
+              "pos": [
+                -636.5115356445312,
+                -1357.8570556640625,
+                -167.96875
+              ],
+              "thrusmoke": false,
+              "tick": 83100,
+              "victim": "76561199042514860",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "awp"
+            },
+            {
+              "attacker": "76561198408751282",
+              "attacker_place": "CTSpawn",
+              "attacker_team": 3,
+              "pos": [
+                151.96875,
+                -1914.0299072265625,
+                -39.96875
+              ],
+              "thrusmoke": false,
+              "tick": 83748,
+              "victim": "76561199214323852",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "awp"
+            },
+            {
+              "attacker": "76561198868262356",
+              "attacker_place": "BombsiteA",
+              "attacker_team": 2,
+              "pos": [
+                -132.3885498046875,
+                -1633.218994140625,
+                -167.96875
+              ],
+              "thrusmoke": false,
+              "tick": 84071,
+              "victim": "76561197998175883",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "ak47"
+            },
+            {
+              "attacker": "76561198175694313",
+              "attacker_place": "BombsiteA",
+              "attacker_team": 2,
+              "pos": [
+                -665.6998901367188,
+                -1844.8975830078125,
+                -179.96875
+              ],
+              "thrusmoke": false,
+              "tick": 84768,
+              "victim": "76561198408751282",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "ak47"
+            }
+          ]
+        },
+        "teams": {
+          "2": {
+            "players": [
+              "76561198175694313",
+              "76561198868262356",
+              "76561199042514860",
+              "76561199214323852",
+              "76561199572993407"
+            ]
+          },
+          "3": {
+            "players": [
+              "76561197998175883",
+              "76561198142737073",
+              "76561198408751282",
+              "76561198418589410",
+              "76561199562533004"
+            ]
+          }
+        }
+      },
+      {
+        "rounds": {
+          "13": [
+            {
+              "attacker": "76561198408751282",
+              "attacker_place": "Connector",
+              "attacker_team": 2,
+              "pos": [
+                -511.45587158203125,
+                -1477.5718994140625,
+                -46.70245361328125
+              ],
+              "thrusmoke": false,
+              "tick": 87954,
+              "victim": "76561198868262356",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "glock"
+            },
+            {
+              "attacker": "76561198408751282",
+              "attacker_place": "Stairs",
+              "attacker_team": 2,
+              "pos": [
+                -1121.6519775390625,
+                -1389.0274658203125,
+                -166.06195068359375
+              ],
+              "thrusmoke": false,
+              "tick": 88104,
+              "victim": "76561198175694313",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "glock"
+            },
+            {
+              "attacker": "76561198418589410",
+              "attacker_place": "PalaceInterior",
+              "attacker_team": 2,
+              "pos": [
+                -902.1743774414062,
+                -2335.257568359375,
+                -167.96875
+              ],
+              "thrusmoke": false,
+              "tick": 88226,
+              "victim": "76561199214323852",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "glock"
+            },
+            {
+              "attacker": "76561199562533004",
+              "attacker_place": "SnipersNest",
+              "attacker_team": 2,
+              "pos": [
+                -670.539794921875,
+                -784.6187133789062,
+                -263.96875
+              ],
+              "thrusmoke": false,
+              "tick": 88771,
+              "victim": "76561199572993407",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "usp_silencer"
+            },
+            {
+              "attacker": "76561199562533004",
+              "attacker_place": "SnipersNest",
+              "attacker_team": 2,
+              "pos": [
+                -796.2725830078125,
+                -746.1148681640625,
+                -261.96875
+              ],
+              "thrusmoke": false,
+              "tick": 88886,
+              "victim": "76561199042514860",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "usp_silencer"
+            }
+          ],
+          "14": [
+            {
+              "attacker": "76561198408751282",
+              "attacker_place": "TRamp",
+              "attacker_team": 2,
+              "pos": [
+                -987.3626708984375,
+                -2488.462646484375,
+                -167.96875
+              ],
+              "thrusmoke": false,
+              "tick": 91801,
+              "victim": "76561199214323852",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "ak47"
+            },
+            {
+              "attacker": "76561198142737073",
+              "attacker_place": "BombsiteA",
+              "attacker_team": 2,
+              "pos": [
+                113.74921417236328,
+                -1960.2149658203125,
+                -167.96875
+              ],
+              "thrusmoke": false,
+              "tick": 92528,
+              "victim": "76561198175694313",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "ak47"
+            },
+            {
+              "attacker": "76561198418589410",
+              "attacker_place": "PalaceInterior",
+              "attacker_team": 2,
+              "pos": [
+                -788.1489868164062,
+                -1516.3099365234375,
+                -167.96875
+              ],
+              "thrusmoke": false,
+              "tick": 92541,
+              "victim": "76561198868262356",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "ak47"
+            },
+            {
+              "attacker": "76561198418589410",
+              "attacker_place": "PalaceInterior",
+              "attacker_team": 2,
+              "pos": [
+                40.289310455322266,
+                -2375.96875,
+                -39.96875
+              ],
+              "thrusmoke": true,
+              "tick": 93202,
+              "victim": "76561199562533004",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "ak47"
+            },
+            {
+              "attacker": "76561199042514860",
+              "attacker_place": "BombsiteA",
+              "attacker_team": 3,
+              "pos": [
+                -758.3964233398438,
+                -1811.7138671875,
+                -179.96875
+              ],
+              "thrusmoke": false,
+              "tick": 93769,
+              "victim": "76561198142737073",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "mp9"
+            },
+            {
+              "attacker": "76561198408751282",
+              "attacker_place": "BombsiteA",
+              "attacker_team": 2,
+              "pos": [
+                279.6378479003906,
+                -1501.773193359375,
+                -175.96875
+              ],
+              "thrusmoke": false,
+              "tick": 93821,
+              "victim": "76561199572993407",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "ak47"
+            },
+            {
+              "attacker": "76561198408751282",
+              "attacker_place": "BombsiteA",
+              "attacker_team": 2,
+              "pos": [
+                -595.42578125,
+                -1908.540771484375,
+                -179.96875
+              ],
+              "thrusmoke": false,
+              "tick": 93886,
+              "victim": "76561199042514860",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "ak47"
+            }
+          ],
+          "15": [
+            {
+              "attacker": "76561198408751282",
+              "attacker_place": "BombsiteA",
+              "attacker_team": 2,
+              "pos": [
+                -61.52142333984375,
+                -1942.33056640625,
+                -39.96875
+              ],
+              "thrusmoke": true,
+              "tick": 94290,
+              "victim": "76561198418589410",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "glock"
+            },
+            {
+              "attacker": "76561199214323852",
+              "attacker_place": "CTSpawn",
+              "attacker_team": 3,
+              "pos": [
+                -667.8648681640625,
+                -2178.030517578125,
+                -179.96875
+              ],
+              "thrusmoke": false,
+              "tick": 97511,
+              "victim": "76561198142737073",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "m4a1_silencer"
+            },
+            {
+              "attacker": "76561198868262356",
+              "attacker_place": "BombsiteA",
+              "attacker_team": 3,
+              "pos": [
+                -711.9296264648438,
+                -788.96923828125,
+                -263.96875
+              ],
+              "thrusmoke": false,
+              "tick": 97538,
+              "victim": "76561197998175883",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "m4a1_silencer"
+            },
+            {
+              "attacker": "76561199562533004",
+              "attacker_place": "Scaffolding",
+              "attacker_team": 2,
+              "pos": [
+                -928.0784912109375,
+                -2532.592041015625,
+                -104.96875
+              ],
+              "thrusmoke": true,
+              "tick": 97539,
+              "victim": "76561199214323852",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "ak47"
+            },
+            {
+              "attacker": "76561198175694313",
+              "attacker_place": "Connector",
+              "attacker_team": 3,
+              "pos": [
+                -752.4673461914062,
+                -2268.988525390625,
+                -179.96875
+              ],
+              "thrusmoke": false,
+              "tick": 98108,
+              "victim": "76561199562533004",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "ak47"
+            },
+            {
+              "attacker": "76561198408751282",
+              "attacker_place": "Stairs",
+              "attacker_team": 2,
+              "pos": [
+                -571.3731689453125,
+                -1340.498046875,
+                -143.759033203125
+              ],
+              "thrusmoke": false,
+              "tick": 98193,
+              "victim": "76561198868262356",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "ak47"
+            },
+            {
+              "attacker": "76561198175694313",
+              "attacker_place": "Connector",
+              "attacker_team": 3,
+              "pos": [
+                -526.9423217773438,
+                -1333.3321533203125,
+                -159.96875
+              ],
+              "thrusmoke": false,
+              "tick": 98272,
+              "victim": "76561198408751282",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "ak47"
+            },
+            {
+              "attacker": "76561198418589410",
+              "attacker_place": "BombsiteA",
+              "attacker_team": 2,
+              "pos": [
+                -680.0234375,
+                -1272.474853515625,
+                -167.96875
+              ],
+              "thrusmoke": false,
+              "tick": 98387,
+              "victim": "76561198175694313",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "ak47"
+            },
+            {
+              "attacker": "76561199572993407",
+              "attacker_place": "Connector",
+              "attacker_team": 3,
+              "pos": [
+                -632.8912963867188,
+                -1835.6986083984375,
+                -179.96875
+              ],
+              "thrusmoke": false,
+              "tick": 98526,
+              "victim": "76561198418589410",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "m4a1_silencer"
+            }
+          ],
+          "16": [
+            {
+              "attacker": "76561198408751282",
+              "attacker_place": "PalaceInterior",
+              "attacker_team": 2,
+              "pos": [
+                -1076.4097900390625,
+                -2454.92724609375,
+                -167.96875
+              ],
+              "thrusmoke": false,
+              "tick": 101314,
+              "victim": "76561199214323852",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "deagle"
+            },
+            {
+              "attacker": "76561197998175883",
+              "attacker_place": "BombsiteA",
+              "attacker_team": 2,
+              "pos": [
+                -496.03125,
+                -1485.2371826171875,
+                -40.57025146484375
+              ],
+              "thrusmoke": false,
+              "tick": 101782,
+              "victim": "76561198868262356",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "ak47"
+            },
+            {
+              "attacker": "76561199562533004",
+              "attacker_place": "BombsiteA",
+              "attacker_team": 2,
+              "pos": [
+                -1240.9984130859375,
+                -1394.864990234375,
+                -163.00799560546875
+              ],
+              "thrusmoke": false,
+              "tick": 101988,
+              "victim": "76561198175694313",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "deagle"
+            },
+            {
+              "attacker": "76561199042514860",
+              "attacker_place": "Underpass",
+              "attacker_team": 3,
+              "pos": [
+                -536.5653686523438,
+                -1842.62841796875,
+                -179.96875
+              ],
+              "thrusmoke": false,
+              "tick": 102288,
+              "victim": "76561198142737073",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "m4a1_silencer"
+            },
+            {
+              "attacker": "76561199562533004",
+              "attacker_place": "SnipersNest",
+              "attacker_team": 2,
+              "pos": [
+                -681.48291015625,
+                -410.57354736328125,
+                -168.19830322265625
+              ],
+              "thrusmoke": false,
+              "tick": 102898,
+              "victim": "76561199042514860",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "deagle"
+            },
+            {
+              "attacker": "76561199562533004",
+              "attacker_place": "Stairs",
+              "attacker_team": 2,
+              "pos": [
+                299.646240234375,
+                -1436.3753662109375,
+                -175.96875
+              ],
+              "thrusmoke": false,
+              "tick": 103667,
+              "victim": "76561199572993407",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "m4a1_silencer"
+            }
+          ],
+          "17": [
+            {
+              "attacker": "76561198175694313",
+              "attacker_place": "BombsiteA",
+              "attacker_team": 3,
+              "pos": [
+                -181.1976318359375,
+                -1850.1356201171875,
+                -167.96875
+              ],
+              "thrusmoke": false,
+              "tick": 106891,
+              "victim": "76561197998175883",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "ump45"
+            },
+            {
+              "attacker": "76561198175694313",
+              "attacker_place": "BombsiteA",
+              "attacker_team": 3,
+              "pos": [
+                -379.085693359375,
+                -1644.5908203125,
+                -163.96875
+              ],
+              "thrusmoke": false,
+              "tick": 107065,
+              "victim": "76561198142737073",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "ump45"
+            },
+            {
+              "attacker": "76561198868262356",
+              "attacker_place": "BombsiteA",
+              "attacker_team": 3,
+              "pos": [
+                52.829742431640625,
+                -1663.5950927734375,
+                -167.96875
+              ],
+              "thrusmoke": false,
+              "tick": 107131,
+              "victim": "76561198408751282",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "usp_silencer"
+            },
+            {
+              "attacker": "76561199042514860",
+              "attacker_place": "BombsiteA",
+              "attacker_team": 3,
+              "pos": [
+                243.65243530273438,
+                -1503.3626708984375,
+                -175.96875
+              ],
+              "thrusmoke": false,
+              "tick": 107377,
+              "victim": "76561198418589410",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "m4a1"
+            },
+            {
+              "attacker": "76561198175694313",
+              "attacker_place": "BombsiteA",
+              "attacker_team": 3,
+              "pos": [
+                60.58009719848633,
+                -2373.749267578125,
+                -39.96875
+              ],
+              "thrusmoke": false,
+              "tick": 107609,
+              "victim": "76561199562533004",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "ump45"
+            }
+          ],
+          "18": [
+            {
+              "attacker": "76561199562533004",
+              "attacker_place": "Catwalk",
+              "attacker_team": 2,
+              "pos": [
+                -896.562255859375,
+                180.50997924804688,
+                -173.0355224609375
+              ],
+              "thrusmoke": false,
+              "tick": 110902,
+              "victim": "76561199042514860",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "ak47"
+            },
+            {
+              "attacker": "76561197998175883",
+              "attacker_place": "Catwalk",
+              "attacker_team": 2,
+              "pos": [
+                -581.608642578125,
+                -1136.9755859375,
+                -167.96875
+              ],
+              "thrusmoke": false,
+              "tick": 112136,
+              "victim": "76561198868262356",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "ak47"
+            },
+            {
+              "attacker": "76561199214323852",
+              "attacker_place": "CTSpawn",
+              "attacker_team": 3,
+              "pos": [
+                -1161.0230712890625,
+                -213.0992431640625,
+                -54.8125
+              ],
+              "thrusmoke": false,
+              "tick": 112326,
+              "victim": "76561198142737073",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "ump45"
+            },
+            {
+              "attacker": "76561199572993407",
+              "attacker_place": "Catwalk",
+              "attacker_team": 3,
+              "pos": [
+                -856.4171752929688,
+                93.31373596191406,
+                -166.6219482421875
+              ],
+              "thrusmoke": false,
+              "tick": 112663,
+              "victim": "76561197998175883",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "m4a1_silencer"
+            },
+            {
+              "attacker": "76561199572993407",
+              "attacker_place": "Catwalk",
+              "attacker_team": 3,
+              "pos": [
+                -869.6661987304688,
+                90.85456085205078,
+                -165.96875
+              ],
+              "thrusmoke": false,
+              "tick": 112734,
+              "victim": "76561198418589410",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "m4a1_silencer"
+            },
+            {
+              "attacker": "76561199214323852",
+              "attacker_place": "Catwalk",
+              "attacker_team": 3,
+              "pos": [
+                -2640.056640625,
+                372.6231384277344,
+                -167.168701171875
+              ],
+              "thrusmoke": false,
+              "tick": 113683,
+              "victim": "76561199562533004",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "ak47"
+            },
+            {
+              "attacker": "76561198408751282",
+              "attacker_place": "Truck",
+              "attacker_team": 2,
+              "pos": [
+                -2010.0072021484375,
+                398.10968017578125,
+                -159.96875
+              ],
+              "thrusmoke": false,
+              "tick": 114032,
+              "victim": "76561199572993407",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "ak47"
+            },
+            {
+              "attacker": "76561198408751282",
+              "attacker_place": "Truck",
+              "attacker_team": 2,
+              "pos": [
+                -1846.39111328125,
+                254.35546875,
+                -160.3699951171875
+              ],
+              "thrusmoke": true,
+              "tick": 114134,
+              "victim": "76561199214323852",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "ak47"
+            },
+            {
+              "attacker": "76561198175694313",
+              "attacker_place": "Truck",
+              "attacker_team": 3,
+              "pos": [
+                -2260.44677734375,
+                809.9258422851562,
+                -121.83831787109375
+              ],
+              "thrusmoke": false,
+              "tick": 114166,
+              "victim": "76561198408751282",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "m4a1_silencer"
+            },
+            {
+              "attacker": null,
+              "attacker_place": null,
+              "attacker_team": null,
+              "pos": [
+                -1919.4442138671875,
+                276.2126770019531,
+                -159.96875
+              ],
+              "thrusmoke": false,
+              "tick": 114690,
+              "victim": "76561198175694313",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "planted_c4"
+            }
+          ],
+          "19": [
+            {
+              "attacker": "76561199572993407",
+              "attacker_place": "BombsiteB",
+              "attacker_team": 3,
+              "pos": [
+                -1744.7213134765625,
+                777.7716064453125,
+                -47.96875
+              ],
+              "thrusmoke": false,
+              "tick": 117485,
+              "victim": "76561198408751282",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "m4a1_silencer"
+            },
+            {
+              "attacker": "76561199562533004",
+              "attacker_place": "Apartments",
+              "attacker_team": 2,
+              "pos": [
+                -2385.1279296875,
+                648.7540283203125,
+                -78.96875
+              ],
+              "thrusmoke": false,
+              "tick": 117651,
+              "victim": "76561199572993407",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "ak47"
+            },
+            {
+              "attacker": "76561199562533004",
+              "attacker_place": "Apartments",
+              "attacker_team": 2,
+              "pos": [
+                -1499.8045654296875,
+                232.82766723632812,
+                -166.96875
+              ],
+              "thrusmoke": false,
+              "tick": 117765,
+              "victim": "76561199042514860",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "ak47"
+            },
+            {
+              "attacker": "76561198142737073",
+              "attacker_place": "BombsiteB",
+              "attacker_team": 2,
+              "pos": [
+                -2037.2840576171875,
+                -427.6607666015625,
+                -167.96875
+              ],
+              "thrusmoke": true,
+              "tick": 118902,
+              "victim": "76561199214323852",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "ak47"
+            },
+            {
+              "attacker": "76561199562533004",
+              "attacker_place": "BombsiteB",
+              "attacker_team": 2,
+              "pos": [
+                -2303.187255859375,
+                -486.92376708984375,
+                -167.96875
+              ],
+              "thrusmoke": true,
+              "tick": 118903,
+              "victim": "76561198868262356",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "ak47"
+            },
+            {
+              "attacker": "76561198418589410",
+              "attacker_place": "Shop",
+              "attacker_team": 2,
+              "pos": [
+                -2193.56103515625,
+                -474.12738037109375,
+                -167.96875
+              ],
+              "thrusmoke": false,
+              "tick": 120008,
+              "victim": "76561198175694313",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "tec9"
+            }
+          ],
+          "20": [
+            {
+              "attacker": "76561198142737073",
+              "attacker_place": "PalaceAlley",
+              "attacker_team": 2,
+              "pos": [
+                322.6697692871094,
+                -1649.67626953125,
+                -175.96875
+              ],
+              "thrusmoke": false,
+              "tick": 122945,
+              "victim": "76561198175694313",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "ak47"
+            },
+            {
+              "attacker": "76561198868262356",
+              "attacker_place": "PalaceInterior",
+              "attacker_team": 3,
+              "pos": [
+                707.4082641601562,
+                -1544.24462890625,
+                -263.965087890625
+              ],
+              "thrusmoke": false,
+              "tick": 123014,
+              "victim": "76561198142737073",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "bizon"
+            },
+            {
+              "attacker": "76561199042514860",
+              "attacker_place": "Catwalk",
+              "attacker_team": 3,
+              "pos": [
+                -752.03125,
+                99.8853988647461,
+                -169.76263427734375
+              ],
+              "thrusmoke": false,
+              "tick": 123081,
+              "victim": "76561197998175883",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "mp5sd"
+            },
+            {
+              "attacker": "76561199562533004",
+              "attacker_place": "Catwalk",
+              "attacker_team": 2,
+              "pos": [
+                -1264.4544677734375,
+                116.0740966796875,
+                -166.21331787109375
+              ],
+              "thrusmoke": false,
+              "tick": 123335,
+              "victim": "76561199042514860",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "ak47"
+            },
+            {
+              "attacker": "76561199562533004",
+              "attacker_place": "Catwalk",
+              "attacker_team": 2,
+              "pos": [
+                -2026.28125,
+                676.6141967773438,
+                -45.121337890625
+              ],
+              "thrusmoke": false,
+              "tick": 123901,
+              "victim": "76561199572993407",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "ak47"
+            },
+            {
+              "attacker": "76561198408751282",
+              "attacker_place": "BombsiteA",
+              "attacker_team": 2,
+              "pos": [
+                -175.9661865234375,
+                -1807.970947265625,
+                -167.96875
+              ],
+              "thrusmoke": false,
+              "tick": 123902,
+              "victim": "76561198868262356",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "ssg08"
+            },
+            {
+              "attacker": "76561199214323852",
+              "attacker_place": "CTSpawn",
+              "attacker_team": 3,
+              "pos": [
+                -820.3646240234375,
+                -2278.54052734375,
+                -175.734375
+              ],
+              "thrusmoke": false,
+              "tick": 124795,
+              "victim": "76561198418589410",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "m4a1_silencer"
+            },
+            {
+              "attacker": "76561198408751282",
+              "attacker_place": "BombsiteA",
+              "attacker_team": 2,
+              "pos": [
+                -61.78118896484375,
+                -1648.1116943359375,
+                -167.96875
+              ],
+              "thrusmoke": false,
+              "tick": 126446,
+              "victim": "76561199214323852",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "ak47"
+            }
+          ],
+          "21": [
+            {
+              "attacker": "76561198142737073",
+              "attacker_place": "Middle",
+              "attacker_team": 2,
+              "pos": [
+                -645.0140380859375,
+                -1377.844970703125,
+                -167.96875
+              ],
+              "thrusmoke": false,
+              "tick": 129198,
+              "victim": "76561198868262356",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "ak47"
+            },
+            {
+              "attacker": "76561199562533004",
+              "attacker_place": "PalaceInterior",
+              "attacker_team": 2,
+              "pos": [
+                -849.3358154296875,
+                -2266.329833984375,
+                -173.701904296875
+              ],
+              "thrusmoke": true,
+              "tick": 129320,
+              "victim": "76561199214323852",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "ak47"
+            },
+            {
+              "attacker": "76561199042514860",
+              "attacker_place": "Catwalk",
+              "attacker_team": 3,
+              "pos": [
+                -697.6445922851562,
+                -1060.1937255859375,
+                -201.8681640625
+              ],
+              "thrusmoke": false,
+              "tick": 129465,
+              "victim": "76561198142737073",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "famas"
+            },
+            {
+              "attacker": "76561198175694313",
+              "attacker_place": "BombsiteA",
+              "attacker_team": 3,
+              "pos": [
+                -119.71710205078125,
+                -2092.893798828125,
+                -167.96875
+              ],
+              "thrusmoke": false,
+              "tick": 129492,
+              "victim": "76561199562533004",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "ump45"
+            },
+            {
+              "attacker": "76561198175694313",
+              "attacker_place": "BombsiteA",
+              "attacker_team": 3,
+              "pos": [
+                -212.6988525390625,
+                -1737.677734375,
+                -167.96875
+              ],
+              "thrusmoke": false,
+              "tick": 130358,
+              "victim": "76561198418589410",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "ak47"
+            },
+            {
+              "attacker": "76561198408751282",
+              "attacker_place": "PalaceInterior",
+              "attacker_team": 2,
+              "pos": [
+                -554.8345947265625,
+                -1624.6058349609375,
+                -40.55419921875
+              ],
+              "thrusmoke": false,
+              "tick": 130390,
+              "victim": "76561199042514860",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "ak47"
+            },
+            {
+              "attacker": "76561199572993407",
+              "attacker_place": "Catwalk",
+              "attacker_team": 3,
+              "pos": [
+                -246.7274169921875,
+                -350.7586669921875,
+                -163.96875
+              ],
+              "thrusmoke": false,
+              "tick": 130447,
+              "victim": "76561197998175883",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "m4a1_silencer"
+            },
+            {
+              "attacker": "76561198175694313",
+              "attacker_place": "BombsiteA",
+              "attacker_team": 3,
+              "pos": [
+                -102.2681884765625,
+                -2044.612060546875,
+                -167.96875
+              ],
+              "thrusmoke": false,
+              "tick": 131069,
+              "victim": "76561198408751282",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "ak47"
+            }
+          ],
+          "22": [
+            {
+              "attacker": "76561199562533004",
+              "attacker_place": "Middle",
+              "attacker_team": 2,
+              "pos": [
+                -658.5458984375,
+                -1332.8748779296875,
+                -167.96875
+              ],
+              "thrusmoke": false,
+              "tick": 133904,
+              "victim": "76561198868262356",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "ak47"
+            },
+            {
+              "attacker": "76561198175694313",
+              "attacker_place": "CTSpawn",
+              "attacker_team": 3,
+              "pos": [
+                -571.8342895507812,
+                -1351.837158203125,
+                -167.96875
+              ],
+              "thrusmoke": false,
+              "tick": 134153,
+              "victim": "76561198142737073",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "ak47"
+            },
+            {
+              "attacker": "76561198418589410",
+              "attacker_place": "BombsiteA",
+              "attacker_team": 2,
+              "pos": [
+                -1240.6307373046875,
+                -1481.8074951171875,
+                -155.1173095703125
+              ],
+              "thrusmoke": false,
+              "tick": 134705,
+              "victim": "76561198175694313",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "ak47"
+            },
+            {
+              "attacker": "76561199572993407",
+              "attacker_place": "Middle",
+              "attacker_team": 3,
+              "pos": [
+                -785.571533203125,
+                -1217.361572265625,
+                -167.96875
+              ],
+              "thrusmoke": false,
+              "tick": 134996,
+              "victim": "76561199562533004",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "m4a1_silencer"
+            },
+            {
+              "attacker": "76561197998175883",
+              "attacker_place": "TopofMid",
+              "attacker_team": 2,
+              "pos": [
+                -612.7799682617188,
+                -685.7906494140625,
+                -270.2410888671875
+              ],
+              "thrusmoke": false,
+              "tick": 135011,
+              "victim": "76561199572993407",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "glock"
+            },
+            {
+              "attacker": "76561199214323852",
+              "attacker_place": "CTSpawn",
+              "attacker_team": 3,
+              "pos": [
+                -161.669921875,
+                -2193.52880859375,
+                -167.96875
+              ],
+              "thrusmoke": false,
+              "tick": 135184,
+              "victim": "76561198418589410",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "awp"
+            },
+            {
+              "attacker": "76561199042514860",
+              "attacker_place": "Catwalk",
+              "attacker_team": 3,
+              "pos": [
+                -1292.7794189453125,
+                350.0662841796875,
+                -129.483154296875
+              ],
+              "thrusmoke": false,
+              "tick": 135664,
+              "victim": "76561198408751282",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "famas"
+            },
+            {
+              "attacker": "76561199214323852",
+              "attacker_place": "CTSpawn",
+              "attacker_team": 3,
+              "pos": [
+                -459.46923828125,
+                -2134.793212890625,
+                -179.96875
+              ],
+              "thrusmoke": false,
+              "tick": 135779,
+              "victim": "76561197998175883",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "awp"
+            }
+          ],
+          "23": [
+            {
+              "attacker": "76561199562533004",
+              "attacker_place": "SnipersNest",
+              "attacker_team": 2,
+              "pos": [
+                -1216.11767578125,
+                -1374.8258056640625,
+                -165.36322021484375
+              ],
+              "thrusmoke": false,
+              "tick": 138894,
+              "victim": "76561198175694313",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "deagle"
+            },
+            {
+              "attacker": "76561198408751282",
+              "attacker_place": "Shop",
+              "attacker_team": 2,
+              "pos": [
+                -2391.75927734375,
+                598.4168090820312,
+                -78.96875
+              ],
+              "thrusmoke": false,
+              "tick": 139130,
+              "victim": "76561199572993407",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "deagle"
+            },
+            {
+              "attacker": "76561199214323852",
+              "attacker_place": "CTSpawn",
+              "attacker_team": 3,
+              "pos": [
+                -576.3001098632812,
+                -376.7840576171875,
+                -167.94891357421875
+              ],
+              "thrusmoke": false,
+              "tick": 139157,
+              "victim": "76561198418589410",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "awp"
+            },
+            {
+              "attacker": "76561197998175883",
+              "attacker_place": "Middle",
+              "attacker_team": 2,
+              "pos": [
+                -658.1068725585938,
+                -1340.9041748046875,
+                -167.96875
+              ],
+              "thrusmoke": false,
+              "tick": 139468,
+              "victim": "76561198868262356",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "ak47"
+            },
+            {
+              "attacker": "76561199042514860",
+              "attacker_place": "Ladder",
+              "attacker_team": 3,
+              "pos": [
+                -609.5350952148438,
+                -398.3673095703125,
+                -168.0621337890625
+              ],
+              "thrusmoke": false,
+              "tick": 140328,
+              "victim": "76561197998175883",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "m4a1"
+            },
+            {
+              "attacker": "76561199042514860",
+              "attacker_place": "Catwalk",
+              "attacker_team": 3,
+              "pos": [
+                -1616.091064453125,
+                285.7421569824219,
+                -170.42291259765625
+              ],
+              "thrusmoke": false,
+              "tick": 140479,
+              "victim": "76561198142737073",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "m4a1"
+            },
+            {
+              "attacker": "76561198408751282",
+              "attacker_place": "Shop",
+              "attacker_team": 2,
+              "pos": [
+                -1584.442138671875,
+                -732.3163452148438,
+                -167.96875
+              ],
+              "thrusmoke": false,
+              "tick": 140959,
+              "victim": "76561199214323852",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "m4a1_silencer"
+            },
+            {
+              "attacker": "76561199562533004",
+              "attacker_place": "BombsiteB",
+              "attacker_team": 2,
+              "pos": [
+                -1600.012451171875,
+                390.7174987792969,
+                -169.845947265625
+              ],
+              "thrusmoke": false,
+              "tick": 141064,
+              "victim": "76561199042514860",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "hegrenade"
+            }
+          ],
+          "24": [
+            {
+              "attacker": "76561198175694313",
+              "attacker_place": "BombsiteA",
+              "attacker_team": 3,
+              "pos": [
+                90.75335693359375,
+                -1419.1900634765625,
+                -175.96875
+              ],
+              "thrusmoke": false,
+              "tick": 144436,
+              "victim": "76561198418589410",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "fiveseven"
+            },
+            {
+              "attacker": "76561198175694313",
+              "attacker_place": "BombsiteA",
+              "attacker_team": 3,
+              "pos": [
+                212.02964782714844,
+                -1466.888671875,
+                -175.96875
+              ],
+              "thrusmoke": false,
+              "tick": 144718,
+              "victim": "76561197998175883",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "fiveseven"
+            },
+            {
+              "attacker": "76561198408751282",
+              "attacker_place": "TRamp",
+              "attacker_team": 2,
+              "pos": [
+                157.47999572753906,
+                -1562.068603515625,
+                -174.96173095703125
+              ],
+              "thrusmoke": false,
+              "tick": 144930,
+              "victim": "76561198175694313",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "deagle"
+            },
+            {
+              "attacker": "76561199214323852",
+              "attacker_place": "BombsiteA",
+              "attacker_team": 3,
+              "pos": [
+                582.7947998046875,
+                -1583.0771484375,
+                -263.96875
+              ],
+              "thrusmoke": false,
+              "tick": 144968,
+              "victim": "76561198408751282",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "m4a1_silencer"
+            },
+            {
+              "attacker": "76561198142737073",
+              "attacker_place": "PalaceInterior",
+              "attacker_team": 2,
+              "pos": [
+                -316.17559814453125,
+                -1926.2205810546875,
+                -169.23846435546875
+              ],
+              "thrusmoke": false,
+              "tick": 145336,
+              "victim": "76561198868262356",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "ump45"
+            },
+            {
+              "attacker": "76561199042514860",
+              "attacker_place": "BombsiteA",
+              "attacker_team": 3,
+              "pos": [
+                76.77239227294922,
+                -2167.563720703125,
+                -39.96875
+              ],
+              "thrusmoke": false,
+              "tick": 145735,
+              "victim": "76561198142737073",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "mp9"
+            },
+            {
+              "attacker": "76561199562533004",
+              "attacker_place": "PalaceInterior",
+              "attacker_team": 2,
+              "pos": [
+                66.49993133544922,
+                -2106.051025390625,
+                -39.96875
+              ],
+              "thrusmoke": false,
+              "tick": 146580,
+              "victim": "76561199042514860",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "m4a1"
+            },
+            {
+              "attacker": "76561199214323852",
+              "attacker_place": "BombsiteA",
+              "attacker_team": 3,
+              "pos": [
+                -167.07183837890625,
+                -2168.52783203125,
+                -167.96875
+              ],
+              "thrusmoke": false,
+              "tick": 147223,
+              "victim": "76561199562533004",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "awp"
+            }
+          ]
+        },
+        "teams": {
+          "2": {
+            "players": [
+              "76561197998175883",
+              "76561198142737073",
+              "76561198408751282",
+              "76561198418589410",
+              "76561199562533004"
+            ]
+          },
+          "3": {
+            "players": [
+              "76561198175694313",
+              "76561198868262356",
+              "76561199042514860",
+              "76561199214323852",
+              "76561199572993407"
+            ]
+          }
+        }
+      },
+      {
+        "rounds": {
+          "25": [
+            {
+              "attacker": "76561198175694313",
+              "attacker_place": "SnipersNest",
+              "attacker_team": 3,
+              "pos": [
+                421.98095703125,
+                -215.07147216796875,
+                -164.974609375
+              ],
+              "thrusmoke": false,
+              "tick": 152371,
+              "victim": "76561197998175883",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "awp"
+            },
+            {
+              "attacker": "76561198868262356",
+              "attacker_place": "BombsiteA",
+              "attacker_team": 3,
+              "pos": [
+                -625.7533569335938,
+                -856.6580810546875,
+                -255.635986328125
+              ],
+              "thrusmoke": false,
+              "tick": 153219,
+              "victim": "76561199562533004",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "m4a1"
+            },
+            {
+              "attacker": "76561198142737073",
+              "attacker_place": "Catwalk",
+              "attacker_team": 2,
+              "pos": [
+                -772.6094970703125,
+                -2406.175537109375,
+                -173.580078125
+              ],
+              "thrusmoke": false,
+              "tick": 153459,
+              "victim": "76561199572993407",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "awp"
+            },
+            {
+              "attacker": "76561199042514860",
+              "attacker_place": "Catwalk",
+              "attacker_team": 3,
+              "pos": [
+                -819.800537109375,
+                -202.8310546875,
+                -165.9383544921875
+              ],
+              "thrusmoke": false,
+              "tick": 155036,
+              "victim": "76561198142737073",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "m4a1"
+            },
+            {
+              "attacker": "76561199042514860",
+              "attacker_place": "Catwalk",
+              "attacker_team": 3,
+              "pos": [
+                -843.459716796875,
+                -788.2455444335938,
+                -221.96875
+              ],
+              "thrusmoke": false,
+              "tick": 155655,
+              "victim": "76561198418589410",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "m4a1"
+            },
+            {
+              "attacker": "76561199042514860",
+              "attacker_place": "Catwalk",
+              "attacker_team": 3,
+              "pos": [
+                -1931.5152587890625,
+                593.6843872070312,
+                -167.96875
+              ],
+              "thrusmoke": false,
+              "tick": 156278,
+              "victim": "76561198408751282",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "m4a1"
+            }
+          ],
+          "26": [
+            {
+              "attacker": "76561198142737073",
+              "attacker_place": "TopofMid",
+              "attacker_team": 2,
+              "pos": [
+                -1165.463134765625,
+                -675.5245361328125,
+                -167.96875
+              ],
+              "thrusmoke": false,
+              "tick": 159553,
+              "victim": "76561199214323852",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "awp"
+            },
+            {
+              "attacker": "76561198175694313",
+              "attacker_place": "Underpass",
+              "attacker_team": 3,
+              "pos": [
+                -680.2347412109375,
+                -956.268798828125,
+                -215.96875
+              ],
+              "thrusmoke": false,
+              "tick": 160925,
+              "victim": "76561198142737073",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "awp"
+            },
+            {
+              "attacker": "76561199042514860",
+              "attacker_place": "CTSpawn",
+              "attacker_team": 3,
+              "pos": [
+                63.076622009277344,
+                -2041.5435791015625,
+                -39.96875
+              ],
+              "thrusmoke": false,
+              "tick": 161486,
+              "victim": "76561199562533004",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "m4a1"
+            },
+            {
+              "attacker": "76561198408751282",
+              "attacker_place": "BombsiteA",
+              "attacker_team": 2,
+              "pos": [
+                -783.7018432617188,
+                -2129.12060546875,
+                -179.96875
+              ],
+              "thrusmoke": false,
+              "tick": 161894,
+              "victim": "76561199042514860",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "ak47"
+            },
+            {
+              "attacker": "76561198868262356",
+              "attacker_place": "BombsiteA",
+              "attacker_team": 3,
+              "pos": [
+                -563.4486694335938,
+                -1743.890380859375,
+                -179.9576416015625
+              ],
+              "thrusmoke": false,
+              "tick": 162239,
+              "victim": "76561197998175883",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "m4a1"
+            },
+            {
+              "attacker": "76561198408751282",
+              "attacker_place": "BombsiteA",
+              "attacker_team": 2,
+              "pos": [
+                -649.1332397460938,
+                -1484.135986328125,
+                -167.96875
+              ],
+              "thrusmoke": false,
+              "tick": 162674,
+              "victim": "76561198868262356",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "ak47"
+            },
+            {
+              "attacker": "76561199572993407",
+              "attacker_place": "BombsiteA",
+              "attacker_team": 3,
+              "pos": [
+                -324.7847900390625,
+                -2200.00048828125,
+                -172.00341796875
+              ],
+              "thrusmoke": false,
+              "tick": 162729,
+              "victim": "76561198408751282",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "m4a1_silencer"
+            },
+            {
+              "attacker": "76561198175694313",
+              "attacker_place": "CTSpawn",
+              "attacker_team": 3,
+              "pos": [
+                -250.49188232421875,
+                -2137.03125,
+                -172.769287109375
+              ],
+              "thrusmoke": false,
+              "tick": 162786,
+              "victim": "76561198418589410",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "awp"
+            }
+          ],
+          "27": [
+            {
+              "attacker": "76561198175694313",
+              "attacker_place": "SnipersNest",
+              "attacker_team": 3,
+              "pos": [
+                458.070556640625,
+                -245.19952392578125,
+                -159.96875
+              ],
+              "thrusmoke": false,
+              "tick": 165538,
+              "victim": "76561197998175883",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "awp"
+            },
+            {
+              "attacker": "76561198418589410",
+              "attacker_place": "Apartments",
+              "attacker_team": 2,
+              "pos": [
+                -2322.11376953125,
+                720.326171875,
+                -39.96875
+              ],
+              "thrusmoke": false,
+              "tick": 165991,
+              "victim": "76561199572993407",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "awp"
+            },
+            {
+              "attacker": "76561199042514860",
+              "attacker_place": "BombsiteB",
+              "attacker_team": 3,
+              "pos": [
+                -1973.3521728515625,
+                450.0561218261719,
+                -159.96875
+              ],
+              "thrusmoke": false,
+              "tick": 166633,
+              "victim": "76561198408751282",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "m4a1"
+            },
+            {
+              "attacker": "76561198418589410",
+              "attacker_place": "BombsiteB",
+              "attacker_team": 2,
+              "pos": [
+                -2206.530517578125,
+                -22.395751953125,
+                -165.71875
+              ],
+              "thrusmoke": false,
+              "tick": 167249,
+              "victim": "76561199042514860",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "awp"
+            },
+            {
+              "attacker": "76561198175694313",
+              "attacker_place": "Shop",
+              "attacker_team": 3,
+              "pos": [
+                -2360.60986328125,
+                187.81727600097656,
+                -167.96875
+              ],
+              "thrusmoke": false,
+              "tick": 167423,
+              "victim": "76561198418589410",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "awp"
+            },
+            {
+              "attacker": "76561198175694313",
+              "attacker_place": "Shop",
+              "attacker_team": 3,
+              "pos": [
+                -2250.091796875,
+                491.2729187011719,
+                -167.96875
+              ],
+              "thrusmoke": false,
+              "tick": 167579,
+              "victim": "76561199562533004",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "awp"
+            },
+            {
+              "attacker": "76561199214323852",
+              "attacker_place": "Catwalk",
+              "attacker_team": 3,
+              "pos": [
+                -1950.666015625,
+                754.4876708984375,
+                -47.96875
+              ],
+              "thrusmoke": false,
+              "tick": 168936,
+              "victim": "76561198142737073",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "ak47"
+            }
+          ]
+        },
+        "teams": {
+          "2": {
+            "players": [
+              "76561197998175883",
+              "76561198142737073",
+              "76561198408751282",
+              "76561198418589410",
+              "76561199562533004"
+            ]
+          },
+          "3": {
+            "players": [
+              "76561198175694313",
+              "76561198868262356",
+              "76561199042514860",
+              "76561199214323852",
+              "76561199572993407"
+            ]
+          }
+        }
+      },
+      {
+        "rounds": {
+          "28": [
+            {
+              "attacker": "76561198418589410",
+              "attacker_place": "PalaceInterior",
+              "attacker_team": 3,
+              "pos": [
+                927.9271850585938,
+                -1953.72314453125,
+                -71.96875
+              ],
+              "thrusmoke": false,
+              "tick": 172437,
+              "victim": "76561199214323852",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "m4a1"
+            },
+            {
+              "attacker": "76561198418589410",
+              "attacker_place": "BombsiteA",
+              "attacker_team": 3,
+              "pos": [
+                61.68035125732422,
+                -1945.0814208984375,
+                -39.96875
+              ],
+              "thrusmoke": false,
+              "tick": 175682,
+              "victim": "76561199572993407",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "ak47"
+            },
+            {
+              "attacker": "76561198418589410",
+              "attacker_place": "BombsiteA",
+              "attacker_team": 3,
+              "pos": [
+                -9.1202392578125,
+                -1531.9683837890625,
+                -168.65655517578125
+              ],
+              "thrusmoke": false,
+              "tick": 176156,
+              "victim": "76561198868262356",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "ak47"
+            },
+            {
+              "attacker": "76561198175694313",
+              "attacker_place": "BombsiteA",
+              "attacker_team": 2,
+              "pos": [
+                -229.5030517578125,
+                -2190.6162109375,
+                -168.60284423828125
+              ],
+              "thrusmoke": false,
+              "tick": 176166,
+              "victim": "76561198418589410",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "ak47"
+            },
+            {
+              "attacker": "76561198408751282",
+              "attacker_place": "BombsiteA",
+              "attacker_team": 3,
+              "pos": [
+                61.23442077636719,
+                -1578.90087890625,
+                -173.27850341796875
+              ],
+              "thrusmoke": false,
+              "tick": 176322,
+              "victim": "76561198175694313",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "awp"
+            },
+            {
+              "attacker": "76561197998175883",
+              "attacker_place": "Stairs",
+              "attacker_team": 3,
+              "pos": [
+                -10.2530517578125,
+                -1420.645751953125,
+                -168.54327392578125
+              ],
+              "thrusmoke": false,
+              "tick": 176431,
+              "victim": "76561199042514860",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "m4a1_silencer"
+            }
+          ],
+          "29": [
+            {
+              "attacker": "76561198175694313",
+              "attacker_place": "Apartments",
+              "attacker_team": 2,
+              "pos": [
+                -1722.274658203125,
+                756.1586303710938,
+                -47.96875
+              ],
+              "thrusmoke": false,
+              "tick": 182257,
+              "victim": "76561199572993407",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "knife_t"
+            },
+            {
+              "attacker": "76561199562533004",
+              "attacker_place": "BombsiteB",
+              "attacker_team": 3,
+              "pos": [
+                -2005.3726806640625,
+                787.0610961914062,
+                -47.96875
+              ],
+              "thrusmoke": false,
+              "tick": 182369,
+              "victim": "76561198175694313",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "m4a1"
+            },
+            {
+              "attacker": "76561199042514860",
+              "attacker_place": "Apartments",
+              "attacker_team": 2,
+              "pos": [
+                -274.2569580078125,
+                424.20751953125,
+                -79.91650390625
+              ],
+              "thrusmoke": false,
+              "tick": 182751,
+              "victim": "76561198142737073",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "ak47"
+            },
+            {
+              "attacker": "76561198408751282",
+              "attacker_place": "BombsiteA",
+              "attacker_team": 3,
+              "pos": [
+                187.28366088867188,
+                -1546.038330078125,
+                -175.96875
+              ],
+              "thrusmoke": false,
+              "tick": 184420,
+              "victim": "76561198868262356",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "awp"
+            },
+            {
+              "attacker": "76561199214323852",
+              "attacker_place": "PalaceInterior",
+              "attacker_team": 2,
+              "pos": [
+                -160.4407958984375,
+                -1992.345947265625,
+                -167.96875
+              ],
+              "thrusmoke": false,
+              "tick": 184797,
+              "victim": "76561198408751282",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "ak47"
+            },
+            {
+              "attacker": "76561198418589410",
+              "attacker_place": "BombsiteA",
+              "attacker_team": 3,
+              "pos": [
+                31.041749954223633,
+                -2192.30517578125,
+                -39.96875
+              ],
+              "thrusmoke": false,
+              "tick": 184805,
+              "victim": "76561199214323852",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "m4a1"
+            }
+          ],
+          "30": [
+            {
+              "attacker": "76561198418589410",
+              "attacker_place": "BombsiteB",
+              "attacker_team": 3,
+              "pos": [
+                -909.4644165039062,
+                258.50372314453125,
+                -170.46795654296875
+              ],
+              "thrusmoke": false,
+              "tick": 189203,
+              "victim": "76561199572993407",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "awp"
+            },
+            {
+              "attacker": "76561198418589410",
+              "attacker_place": "BombsiteB",
+              "attacker_team": 3,
+              "pos": [
+                -1310.22900390625,
+                345.807861328125,
+                -167.96875
+              ],
+              "thrusmoke": false,
+              "tick": 189318,
+              "victim": "76561199042514860",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "awp"
+            },
+            {
+              "attacker": "76561199214323852",
+              "attacker_place": "BombsiteB",
+              "attacker_team": 2,
+              "pos": [
+                -1701.0185546875,
+                88.57992553710938,
+                -168.038818359375
+              ],
+              "thrusmoke": false,
+              "tick": 189428,
+              "victim": "76561198418589410",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "ak47"
+            },
+            {
+              "attacker": "76561199214323852",
+              "attacker_place": "BombsiteB",
+              "attacker_team": 2,
+              "pos": [
+                -2338.50048828125,
+                -266.7225341796875,
+                -167.92694091796875
+              ],
+              "thrusmoke": false,
+              "tick": 189652,
+              "victim": "76561199562533004",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "ak47"
+            },
+            {
+              "attacker": "76561198142737073",
+              "attacker_place": "Catwalk",
+              "attacker_team": 3,
+              "pos": [
+                -1448.0306396484375,
+                380.1315612792969,
+                -166.96875
+              ],
+              "thrusmoke": false,
+              "tick": 190282,
+              "victim": "76561198175694313",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "m4a1"
+            },
+            {
+              "attacker": "76561198142737073",
+              "attacker_place": "Catwalk",
+              "attacker_team": 3,
+              "pos": [
+                -1653.86474609375,
+                272.2879943847656,
+                -170.721923828125
+              ],
+              "thrusmoke": false,
+              "tick": 190385,
+              "victim": "76561198868262356",
+              "victim_place": null,
+              "victim_team": 2,
+              "weapon": "m4a1"
+            },
+            {
+              "attacker": "76561199214323852",
+              "attacker_place": "Shop",
+              "attacker_team": 2,
+              "pos": [
+                -1949.0982666015625,
+                -606.7788696289062,
+                -167.96875
+              ],
+              "thrusmoke": false,
+              "tick": 190437,
+              "victim": "76561197998175883",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "ak47"
+            },
+            {
+              "attacker": "76561199214323852",
+              "attacker_place": "BombsiteB",
+              "attacker_team": 2,
+              "pos": [
+                -1634.4736328125,
+                -248.66851806640625,
+                -163.96875
+              ],
+              "thrusmoke": false,
+              "tick": 191687,
+              "victim": "76561198142737073",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "ak47"
+            },
+            {
+              "attacker": "76561199214323852",
+              "attacker_place": "BombsiteB",
+              "attacker_team": 2,
+              "pos": [
+                -2111.23388671875,
+                274.7960205078125,
+                -159.96875
+              ],
+              "thrusmoke": false,
+              "tick": 191754,
+              "victim": "76561198408751282",
+              "victim_place": null,
+              "victim_team": 3,
+              "weapon": "ak47"
+            }
+          ]
+        },
+        "teams": {
+          "2": {
+            "players": [
+              "76561198175694313",
+              "76561198868262356",
+              "76561199042514860",
+              "76561199214323852",
+              "76561199572993407"
+            ]
+          },
+          "3": {
+            "players": [
+              "76561197998175883",
+              "76561198142737073",
+              "76561198408751282",
+              "76561198418589410",
+              "76561199562533004"
+            ]
+          }
+        }
+      }
+    ],
+    "headers": {
+      "addons": "",
+      "allow_clientside_entities": "true",
+      "allow_clientside_particles": "true",
+      "client_name": "SourceTV Demo",
+      "demo_file_stamp": "PBDEMS2\u0000",
+      "demo_version_guid": "8e9d71ab-04a1-4c01-bb61-acfede27c046",
+      "demo_version_name": "valve_demo_2",
+      "fullpackets_version": "2",
+      "game_directory": "/opt/srcds/cs2/csgo_v2000283/csgo",
+      "map_name": "de_mirage",
+      "network_protocol": "14000",
+      "server_name": "Valve Counter-Strike 2 us_north_central Server (srcds1019-ord1.129.238)",
+      "tickrate": 64
+    },
+    "players": [
+      {
+        "id": 65280,
+        "name": "BALJEET",
+        "steamId": "76561198175694313"
+      },
+      {
+        "id": 65281,
+        "name": "FatCock.png",
+        "steamId": "76561198868262356"
+      },
+      {
+        "id": 65282,
+        "name": "BITCH",
+        "steamId": "76561199572993407"
+      },
+      {
+        "id": 65283,
+        "name": "StyleZ",
+        "steamId": "76561199042514860"
+      },
+      {
+        "id": 65284,
+        "name": "K8 Gsxr",
+        "steamId": "76561199214323852"
+      },
+      {
+        "id": 65285,
+        "name": "breb",
+        "steamId": "76561198408751282"
+      },
+      {
+        "id": 65286,
+        "name": "bear",
+        "steamId": "76561198418589410"
+      },
+      {
+        "id": 65287,
+        "name": "nice",
+        "steamId": "76561199562533004"
+      },
+      {
+        "id": 65288,
+        "name": "Poweraang",
+        "steamId": "76561198142737073"
+      },
+      {
+        "id": 65289,
+        "name": "Cupcake<3",
+        "steamId": "76561197998175883"
+      }
+    ],
+    "score": [
+      14,
+      16
+    ]
+  }
+}

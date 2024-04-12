@@ -62,3 +62,7 @@ jspm_packages/
 
 # Don't track transpiled files
 dist/
+
+/data/
+
+.DS_Store

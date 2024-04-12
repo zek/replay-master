@@ -42,7 +42,7 @@ const brokerConfig: BrokerOptions = {
       // Using colors on the output
       colors: true,
       // Print module names with different colors (like docker-compose for containers)
-      moduleColors: false,
+      moduleColors: true,
       // Line formatter. It can be "json", "short", "simple", "full", a `Function` or a template string like "{timestamp} {level} {nodeID}/{mod}: {msg}"
       formatter: "full",
       // Custom object printer. If not defined, it uses the `util.inspect` method.
@@ -59,11 +59,11 @@ const brokerConfig: BrokerOptions = {
   // More info: https://moleculer.services/docs/0.14/networking.html
   // Note: During the development, you don't need to define it because all services will be loaded locally.
   // In production you can set it via `TRANSPORTER=nats://localhost:4222` environment variable.
-  transporter: null, // "NATS"
+  transporter: process.env.TRANSPORTER, // "NATS"
 
   // Define a cacher.
   // More info: https://moleculer.services/docs/0.14/caching.html
-  cacher: null,
+  cacher: 'Memory',
 
   // Define a serializer.
   // Available values: "JSON", "Avro", "ProtoBuf", "MsgPack", "Notepack", "Thrift".

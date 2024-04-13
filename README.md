@@ -3,59 +3,69 @@
 Welcome to Replay Master, a Discord bot designed for Counter Strike 2 players. 
 This bot makes it easy to record your game highlights by using a matchmaking sharecode.
 
-🚀 **Features**:
-- **Automatic Recording**: Give the bot a sharecode, and it will record your game highlights.
-- **Simple Integration**: Add Replay Master to your Discord server with minimal setup.
-- **Quick Access to Highlights**: View your recorded highlights directly on Discord.
+## 🚀 Features
+- **Automatic Recording**: Simply provide a sharecode, and the bot will capture your game highlights.
+- **Simple Integration**: Effortlessly add Replay Master to your Discord server.
+- **Quick Access to Highlights**: Easily view and share your recorded highlights directly on Discord.
 
-Start using Replay Master today to capture and share your best gaming moments!
+Get started today and capture your best gaming moments with Replay Master!
 
-🔧 **Get Started**:
+## 🔧 Installation Guide
 
-We suggest using Chocolatey, a package manager for Windows, to simplify the software installation process. Refer to the [Chocolatey Installation Guide](https://chocolatey.org/install) for setup details.
+### Prerequisites
 
-1. Install NodeJS
+Install the following software using [Chocolatey](https://chocolatey.org/install), a package manager for Windows:
 
-```bash
-choco install nodejs
-```
+1. **Node.js**
+   ```bash
+   choco install nodejs
+   ```
+2. **ffmpeg**
+   ```bash
+   choco install ffmpeg
+   ```
+3. **Minio** - Local storage solution ([More Info & Download](https://min.io/download))
 
-2. Install ffmpeg
+### Optional: Improve Decompression Time
 
-```bash
-choco install ffmpeg
-```
-
-3. Install Minio (See https://min.io/download)
-
-4. Recommended Software for Faster Decompression (optional)
-
-To significantly improve the efficiency of decompressing demo files, consider installing `bzip2` and `gzip`. These tools can decrease the decompression time from 60 seconds to 8 seconds.
-
-You can install these utilities via Chocolatey using the following commands:
-
+For faster decompression of demo files, install `bzip2` and `gzip`:
 - `choco install bzip2`
 - `choco install gzip`
 
-Using `bzip2` and `gzip` will make the process of decompressing demo files much faster, enhancing productivity.
+### Setup Steps
 
-## Installation
+1. **Clone the Repository**
+   Clone the repository to get the latest version of Replay Master.
+   ```bash
+   git clone https://github.com/your-username/cs2-replay-recorder.git
+   ```
+2. **Install Dependencies**
+   Navigate to the cloned directory and install necessary npm packages.
+   ```bash
+   npm install
+   ```
+3. **Download HLAE Binaries**
+   Download the required HLAE binaries for processing game replays.
+   ([github.com/advancedfx/advancedfx](https://github.com/advancedfx/advancedfx))
+   ```bash
+   npm run download-hlae
+   ```
+4. **Generate Steam Refresh Token**
+   Authenticate and generate the required STEAM_REFRESH_TOKEN for Steam access.
+   ```bash
+   npm run steam-login
+   ```
 
-To use CS2 Replay Master, follow these steps:
+### Configuring Discord Access
 
-1. Clone the repository to your local machine:
+- Navigate to the [Discord Developer Portal](https://discord.com/developers/applications).
+- Create a new application and note down the `CLIENT ID`.
+- Under the Bot settings, add a bot and copy the `TOKEN` that is generated.
 
-```bash
-git clone https://github.com/your-username/cs2-replay-recorder.git
-```
+### Environment Configuration
 
-2. Install dependencies using npm:
+Create a `.env` file with the following settings:
 
-```bash
-npm install
-```
-
-3. Create .env file
 ```
 # Steam
 STEAM_REFRESH_TOKEN=""
@@ -80,28 +90,33 @@ FFMPEG_PATH="ffmpeg.exe"
 CSGO_DIR="C:/Program Files (x86)/Steam/steamapps/common/Counter-Strike Global Offensive/game"
 ```
 
-4. Build and start service:
+### Build and Start
 
 ```bash
 npm run build
 npm run start
 ```
 
-## Filtering Services
+## 📡 Services Overview
 
-To run specific services, use the following command:
+- **replay-downloader/replay-downloader**: Downloads CS2 match replays from remote URLs.
+- **replay-downloader/replay-faceit**: Retrieves CS2 match replay URL using FaceIT API.
+- **replay-downloader/replay-steam**: Retrieves CS2 match replay URL via Steam authentication.
+- **replay-downloader/file**: Manages uploading and downloading of match replays via Minio.
+- **replay-parser/replay-parser**: Analyzes match data from replays for structured insights.
+- **replay-recorder**: Records and compiles CS2 replays into a video using HLAE.
+
+### Running Specific Services
+
+You can filter running services by defining following env variable. 
+
 ```
-SERVICEDIR="dist/services" SERVICES="discord/*.service.js,http/api,replay-downloader/*.service.js" npx moleculer-runner -e
+SERVICES="discord/*.service.js,http/api,replay-downloader/*.service.js" 
 ```
 
-## Services
-- **replay-downloader/replay-downloader**: Downloads and decompress CS2 match replays from remote URLs, providing an endpoint for clients to retrieve the replay files directly.
-- **replay-downloader/replay-faceit**: Retrieves and returns of CS2 match replay url using FaceIT API
-- **replay-downloader/replay-steam**: Retrieves and returns of CS2 match replay url using Steam authentication and APIs.
-- **replay-downloader/file**: Minio file storage, provides uploading and downloading CS:GO match replay endpoints.
-- **replay-parser/replay-parser**: Analyzes match data from CS2 replay files, including player events, scores, and match details, for structured analysis and use.
-- **replay-recorder**: Records CS2 replays using HLAE, captures highlights, and merges them into a single video.
+## 👥 Community and Contributions
 
-👥 **Community and Contributions**:
-- Contributions are highly encouraged! See the 'Contributing' section for how to get involved.
-- Inspired by [STRIKER](https://github.com/Run1e/STRIKER/)
+Contributions to Replay Master are highly encouraged. 
+If you're interested in improving the bot or adding new features, consider contributing to our project!
+
+Inspired by [STRIKER](https://github.com/Run1e/STRIKER/).

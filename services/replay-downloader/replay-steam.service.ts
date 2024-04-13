@@ -5,7 +5,7 @@ import { Service } from "moleculer";
 import SteamUser from "steam-user";
 import type { WebMeta } from "../types";
 import type { ReplayMeta, ReplaySteamGetParams } from "./types";
-import { ReplayOrigin } from "./types";
+import { matchToReplayMeta } from "./utils";
 
 
 interface ServiceSettings extends ServiceSettingSchema {
@@ -101,13 +101,7 @@ export default class ReplaySteamService extends Service<ServiceSettings> {
         }
 
         this.matches[matchId].push((match) => {
-          resolve({
-            origin: ReplayOrigin.Valve,
-            identifier: match.matchid,
-            time: match.matchtime as number,
-            replayUrl: match.roundstatsall.at(-1)!.map!,
-            sharecode: matchToken,
-          } as ReplayMeta);
+          resolve(matchToReplayMeta(match, matchToken));
           clearTimeout(timeout);
         });
 

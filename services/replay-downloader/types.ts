@@ -10,9 +10,12 @@ export interface ReplaySource {
   replayUrl?: string
 }
 
+export type MatchType = 'wingman' | 'competitive' | 'premier';
+
 export type ReplayMeta = Required<ReplaySource> & {
   identifier: string,
   time: number;
+  type?: MatchType
 }
 
 export interface ActionDownloadParams {

@@ -13,9 +13,9 @@
 
     "lib": ["ES2023"],
     "target": "ES2022",
-    "module": "commonjs",
+    "module": "ESNext",
     "allowJs": true,
-    "moduleResolution": "node",
+    "moduleResolution": "Node",
     "paths": {
       "*": [
         "types/*"

@@ -99,6 +99,7 @@
     "p-map": "^7.0.2",
     "ramda-adjunct": "^4.1.1",
     "sandboxie-js": "^1.0.2",
+    "sharp": "^0.33.3",
     "steam-user": "^5.0.8",
     "superjson": "^1.13.3",
     "unbzip2-stream": "^1.4.3",

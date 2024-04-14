@@ -1,11 +1,13 @@
+import { execa } from "execa";
 import fs from "fs/promises";
+import type { Context, ServiceBroker } from "moleculer";
+import { Service } from "moleculer";
 import { readdir } from "node:fs/promises";
 import { join, resolve } from "node:path";
 import * as process from "process";
-import type { Readable } from "stream";
-import { execa } from "execa";
-import { Service } from "moleculer";
-import type { Context, ServiceBroker } from "moleculer";
+import Stream from "stream";
+import  { Readable } from "stream";
+import concat from "../../modules/ffmpeg-concat";
 import getReplayPath from "../../utils/get-replay-path";
 import randomString from "../../utils/random-string";
 import type { ReplayEntity } from "../replay-parser/types";
@@ -13,7 +15,7 @@ import { calculateBitrate, getKillsByRound, getKillsInfo, singleHighlight } from
 import makeScript from "./hlae-cs2-script";
 import SourceTelnet from "./source-telnet";
 import type { ActionReplayRecordParams, CS2ScriptOptions, Highlight, HighlightRequest } from "./types";
-import { concatVideos, mergeVideoAndAudio } from "./utils";
+import { mergeVideoAndAudio } from "./utils";
 
 interface ServiceSettings {
   hlaeDir: string;
@@ -53,7 +55,7 @@ export default class ReplayRecorderService extends Service<ServiceSettings> {
         height: 1080,
       },
       actions: {
-        'single-highlight': {
+        "single-highlight": {
           params: {},
           handler: this.singleHighlight,
         },
@@ -185,43 +187,49 @@ export default class ReplayRecorderService extends Service<ServiceSettings> {
   }
 
   protected async processRecording(takeFolders: string[]): Promise<Readable> {
-      const taskId = randomString(10);
+    const taskId = randomString(10);
 
-      const parts = await Promise.all(
-        takeFolders.map(async (folder, idx) => {
-          this.logger.info(`Muxing in ${folder}`);
+    const videoFiles = await Promise.all(
+      takeFolders.map(async (folder, idx) => {
+        this.logger.info(`Muxing in ${folder}`);
 
-          const files = await readdir(folder);
-          const wav = files.find(file => file.endsWith(".wav"));
-          if (!wav) {
-            throw new Error(`Could not find .wav in ${folder}`);
-          }
+        const files = await readdir(folder);
+        const wav = files.find(file => file.endsWith(".wav"));
+        if (!wav) {
+          throw new Error(`Could not find .wav in ${folder}`);
+        }
 
-          const clipOutput = join(folder, `${taskId}-${idx}.mp4`);
-          return mergeVideoAndAudio(
-            join(folder, "video.mp4"),
-            join(folder, wav),
-            clipOutput,
-            { ffmpegPath: this.settings.ffmpegPath },
-          ).then(() => clipOutput);
-        }),
-      );
+        const clipOutput = join(folder, `${taskId}-${idx}.mp4`);
+        return mergeVideoAndAudio(
+          join(folder, "video.mp4"),
+          join(folder, wav),
+          clipOutput,
+          { ffmpegPath: this.settings.ffmpegPath },
+        ).then(() => clipOutput);
+      }),
+    );
 
-      if (parts.length === 0) {
-        throw new Error("No recording parts found");
+    if (videoFiles.length === 0) {
+      throw new Error("No recording parts found");
+    }
+
+    const stream = new Stream.PassThrough();
+
+    concat({
+      output: stream,
+      tempDir: this.settings.tempDir,
+      videos: videoFiles,
+      transition: {
+        name: "GlitchMemories",
+        duration: 1000,
+      },
+    }).finally(async () => {
+      for (const takeFolder of takeFolders) {
+        await fs.rm(takeFolder, { recursive: true });
       }
+    });
 
-      return await concatVideos(parts, {
-        tempDir: this.settings.tempDir,
-        ffmpegPath: this.settings.ffmpegPath,
-      }).then(res => {
-        res.once("exit", async() => {
-          for (const takeFolder of takeFolders) {
-            await fs.rm(takeFolder, { recursive: true });
-          }              
-        })
-        return res
-      })
+    return stream
   }
 
   protected async startRecording(options: CS2ScriptOptions) {
@@ -316,14 +324,14 @@ export default class ReplayRecorderService extends Service<ServiceSettings> {
       const process = execa(hlaeBin, args, { timeout: 5_000, reject: false });
 
       await telnet.connect().then(async () => {
-        process.kill()
-        
+        process.kill();
+
         const startupCommands: string[] = [
           "mirv_block_commands add 5 \"\\*\"",
           "exec recorder",
           "exec stream",
         ];
-        
+
         for (const command of startupCommands) {
           await telnet.run(command);
           await new Promise(resolve => {

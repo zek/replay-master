@@ -1,5 +1,3 @@
-import pad from 'pad';
-
 interface TableBuilderOptions<T> {
   sortBy?: (keyof T)[];
   sortDirection?: 'asc' | 'desc';
@@ -50,7 +48,7 @@ export class TableBuilder<T extends Record<string, any>> {
 
   build(): string {
     let result = `\`${this._buildRow(this._createHeader())}\n`;
-    result += pad('', this._totalWidth(), '―');
+    result += ''.padEnd(this._totalWidth(), '―');
 
     if (this._options.sortBy) {
       this._sortRows();
@@ -82,7 +80,7 @@ export class TableBuilder<T extends Record<string, any>> {
         content = column.format(data[key]);
       }
 
-      result += pad(String(content), column.width);
+      result += String(content).padEnd(column.width);
     });
 
     return result;

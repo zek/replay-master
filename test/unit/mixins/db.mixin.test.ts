@@ -1,3 +1,5 @@
+import { afterAll, beforeAll, describe, expect, test, vi } from "vitest";
+
 import type { Service, ServiceAsyncLifecycleHandler, ServiceEventHandler } from "moleculer";
 import { Context, ServiceBroker } from "moleculer";
 import DbService from "moleculer-db";
@@ -21,7 +23,7 @@ describe("Test DB mixin", () => {
     });
 
     test("check cache event handler", async () => {
-      jest.spyOn(broker.cacher!, "clean");
+      vi.spyOn(broker.cacher!, "clean");
 
       const schema = DbMixin("my-collection");
 
@@ -42,8 +44,8 @@ describe("Test DB mixin", () => {
       test("should not call seedDB method", async () => {
         const schema = DbMixin("my-collection");
 
-        schema.adapter!.count = jest.fn(() => Promise.resolve(10));
-        const seedDBFn = jest.fn();
+        schema.adapter!.count = vi.fn(() => Promise.resolve(10));
+        const seedDBFn = vi.fn();
 
         await (schema.started as ServiceAsyncLifecycleHandler).call({
           broker,
@@ -61,8 +63,8 @@ describe("Test DB mixin", () => {
       test("should call seedDB method", async () => {
         const schema = DbMixin("my-collection");
 
-        schema.adapter!.count = jest.fn(() => Promise.resolve(0));
-        const seedDBFn = jest.fn();
+        schema.adapter!.count = vi.fn(() => Promise.resolve(0));
+        const seedDBFn = vi.fn();
 
         await (schema.started as ServiceAsyncLifecycleHandler).call({
           broker,
@@ -84,7 +86,7 @@ describe("Test DB mixin", () => {
 
       const ctx = Context.create(broker);
 
-      jest.spyOn(ctx, "broadcast");
+      vi.spyOn(ctx, "broadcast");
 
       await schema.methods!.entityChanged!("update", null, ctx);
 

@@ -1,3 +1,5 @@
+import { afterAll, beforeAll, describe, expect, test } from "vitest";
+
 import fs from "fs";
 import type { ServiceSchema } from "moleculer";
 import { Errors, ServiceBroker } from "moleculer";

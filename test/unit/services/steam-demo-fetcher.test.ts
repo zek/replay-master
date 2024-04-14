@@ -1,3 +1,5 @@
+import { afterAll, beforeAll, describe, expect, test } from "vitest";
+
 import { Errors, ServiceBroker } from "moleculer";
 import type { ServiceSchema } from "moleculer";
 import TestService from "../../../services/replay-downloader/replay-steam.service";

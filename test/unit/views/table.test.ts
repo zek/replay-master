@@ -1,5 +1,6 @@
-import { TableBuilder } from "../../../services/discord/views/table";
+import { describe, expect, test } from "vitest";
 
+import { TableBuilder } from "../../../services/discord/views/table";
 interface TableRow {
   round: string;
   kills: string;
